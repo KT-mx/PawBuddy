@@ -389,6 +389,10 @@ PrefabInstance:
       propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4418822344231559744, guid: f56bad1b4dcaf3849a2a9fdf56336b57, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4418822344231559746, guid: f56bad1b4dcaf3849a2a9fdf56336b57, type: 3}
       propertyPath: m_Enabled
       value: 0
@@ -439,7 +443,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4418822344231559772, guid: f56bad1b4dcaf3849a2a9fdf56336b57, type: 3}
       propertyPath: m_Enabled
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4418822344231559774, guid: f56bad1b4dcaf3849a2a9fdf56336b57, type: 3}
       propertyPath: m_Enabled
@@ -733,9 +737,17 @@ PrefabInstance:
       propertyPath: m_Name
       value: Unity_SK_Animals_Dog_ALL_01
       objectReference: {fileID: 0}
+    - target: {fileID: 4418822344234775252, guid: f56bad1b4dcaf3849a2a9fdf56336b57, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 4.184
+      objectReference: {fileID: 0}
+    - target: {fileID: 4418822344234775252, guid: f56bad1b4dcaf3849a2a9fdf56336b57, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4418822344234775294, guid: f56bad1b4dcaf3849a2a9fdf56336b57, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0.31
+      value: -0.17
       objectReference: {fileID: 0}
     - target: {fileID: 4418822344234775294, guid: f56bad1b4dcaf3849a2a9fdf56336b57, type: 3}
       propertyPath: m_LocalPosition.y
@@ -743,7 +755,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4418822344234775294, guid: f56bad1b4dcaf3849a2a9fdf56336b57, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 2.97
+      value: 1.37
       objectReference: {fileID: 0}
     - target: {fileID: 4418822344234775294, guid: f56bad1b4dcaf3849a2a9fdf56336b57, type: 3}
       propertyPath: m_LocalRotation.w
@@ -776,8 +788,40 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 4418822344234741470, guid: f56bad1b4dcaf3849a2a9fdf56336b57, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 309748365}
   m_SourcePrefab: {fileID: 100100000, guid: f56bad1b4dcaf3849a2a9fdf56336b57, type: 3}
+--- !u!1 &309748364 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4418822344234741470, guid: f56bad1b4dcaf3849a2a9fdf56336b57, type: 3}
+  m_PrefabInstance: {fileID: 309748363}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &309748365
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 309748364}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0ac3eae726f4896489ed29948254f59f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 1
+  pressARaw: 0
+  pressBRaw: 0
+  pressXRaw: 0
+  pressYRaw: 0
+  controller: -1
+  Animation_Dog: {fileID: 309748366}
+--- !u!95 &309748366 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 4418822344227347610, guid: f56bad1b4dcaf3849a2a9fdf56336b57, type: 3}
+  m_PrefabInstance: {fileID: 309748363}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &344312330 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 487254, guid: 126d619cf4daa52469682f85c1378b4a, type: 3}
