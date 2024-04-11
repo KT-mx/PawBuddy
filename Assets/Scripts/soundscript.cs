@@ -2,8 +2,12 @@ using UnityEngine;
 
 using static OVRInput;
 
-public class Newscript : MonoBehaviour
+public class soundScript : MonoBehaviour
 {
+
+    public AudioSource src;
+    public AudioClip sfx1;
+
     [SerializeField] private bool pressARaw;
     [SerializeField] private bool pressBRaw;
     [SerializeField] private bool pressXRaw;
@@ -36,6 +40,8 @@ public class Newscript : MonoBehaviour
         if (OVRInput.Get(OVRInput.RawButton.Y))
         {
             animationValue = 1;
+            src.clip = sfx1;
+            src.Play();
         }
     
         pressARaw = OVRInput.Get(OVRInput.RawButton.A);
