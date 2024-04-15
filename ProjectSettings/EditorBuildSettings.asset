@@ -9,6 +9,12 @@ EditorBuildSettings:
     path: Assets/Scenes/SampleScene.unity
     guid: 9fc0d4010bbf28b4594072e72b8655ab
   - enabled: 1
+    path: Assets/Scenes/MainMenu.unity
+    guid: e2d108b77aae3d64db7d3f023e36bc09
+  - enabled: 1
+    path: Assets/Scenes/Tanish's scene.unity
+    guid: 8c4db03d60bebab4bbbefd978721de41
+  - enabled: 1
     path: Assets/Scenes/Solomon scene.unity
     guid: 5f47c1bfffb1ef641b38458ab874c824
   m_configObjects:

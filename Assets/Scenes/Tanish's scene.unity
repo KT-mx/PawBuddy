@@ -733,6 +733,10 @@ PrefabInstance:
       propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4418822344234738120, guid: f56bad1b4dcaf3849a2a9fdf56336b57, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4418822344234741470, guid: f56bad1b4dcaf3849a2a9fdf56336b57, type: 3}
       propertyPath: m_Name
       value: Unity_SK_Animals_Dog_ALL_01
