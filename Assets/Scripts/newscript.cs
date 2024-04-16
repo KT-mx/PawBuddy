@@ -2,8 +2,12 @@ using UnityEngine;
 
 using static OVRInput;
 
-public class Newscript : MonoBehaviour
+public class newscript : MonoBehaviour
 {
+    public AudioSource src;
+    public AudioClip Bark, Pant, Shake;
+
+
     [SerializeField] private bool pressARaw;
     [SerializeField] private bool pressBRaw;
     [SerializeField] private bool pressXRaw;
@@ -17,6 +21,8 @@ public class Newscript : MonoBehaviour
     void Start()
     {
         activeController = Controller.None;
+        src.clip = Pant;
+        src.Play();
     }
 
     void Update()
@@ -33,6 +39,9 @@ public class Newscript : MonoBehaviour
         {
           Animation_Dog.SetBool("Sleep_b", false);
           animationValue = 10;
+          src.Stop();
+          src.clip = Shake;
+          src.Play();
         }
         if (OVRInput.Get(OVRInput.RawButton.X))
         {
@@ -41,8 +50,12 @@ public class Newscript : MonoBehaviour
         }
         if (OVRInput.Get(OVRInput.RawButton.Y))
         {
-            Animation_Dog.SetBool("Sleep_b", false);
-            animationValue = 1;
+          Animation_Dog.SetBool("Sleep_b", false);
+          animationValue = 1;
+          src.Stop();
+          src.clip = Bark;
+          src.Play();
+
         }
         if (OVRInput.Get(OVRInput.RawAxis1D.LIndexTrigger) > 0.0f)
         {
@@ -83,6 +96,8 @@ public class Newscript : MonoBehaviour
         if (animationTime >= 0.9f && animationValue != 0)
         {
             animationValue = 0;
+            src.clip = Pant;
+            src.Play();
         }
     }
 
