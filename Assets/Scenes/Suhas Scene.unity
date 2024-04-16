@@ -799,7 +799,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   src: {fileID: 825956332}
-  sfx1: {fileID: 8300000, guid: ecbdc6997e6dc5c41a63472d6280e0ee, type: 3}
+  sfx1: {fileID: 8300000, guid: e8f2a53c44badd440a856a46f3aa404f, type: 3}
   pressARaw: 0
   pressBRaw: 0
   pressXRaw: 0
