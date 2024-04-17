@@ -7,6 +7,6 @@ public class MainMenu : MonoBehaviour
 {
    public void playgame()
    {
-      SceneManager.LoadSceneAsync("Solomon scene");
+      SceneManager.LoadSceneAsync("RayExamples");
    }
 }
