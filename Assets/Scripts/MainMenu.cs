@@ -7,6 +7,6 @@ public class MainMenu : MonoBehaviour
 {
    public void playgame()
    {
-      SceneManager.LoadSceneAsync("Tanish's scene");
+      SceneManager.LoadSceneAsync("Solomon scene");
    }
 }
