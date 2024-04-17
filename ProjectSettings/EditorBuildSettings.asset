@@ -14,9 +14,15 @@ EditorBuildSettings:
   - enabled: 0
     path: Assets/Scenes/Tanish's scene.unity
     guid: 8c4db03d60bebab4bbbefd978721de41
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Solomon scene.unity
     guid: 5f47c1bfffb1ef641b38458ab874c824
+  - enabled: 1
+    path: Assets/Scenes/ray scene1.unity
+    guid: 22716351044128448b1b9e1091bda4a2
+  - enabled: 1
+    path: Assets/Scenes/RayExamples.unity
+    guid: 0fbd37da5c83c4c4583044430f69ce81
   m_configObjects:
     Unity.XR.Oculus.Settings: {fileID: 11400000, guid: e87b0b276a00b1c45a3389608ec8bc9c, type: 2}
     com.unity.xr.management.loader_settings: {fileID: 11400000, guid: 94e58f6667fcc454b8ed3d8da4a402ff, type: 2}
