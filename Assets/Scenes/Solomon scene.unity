@@ -869,7 +869,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   src: {fileID: 1258164670}
   Bark: {fileID: 8300000, guid: 81c3cbb2d906dcf47959ce0cf50f8d81, type: 3}
-  Pant: {fileID: 8300000, guid: c2b753330780bb84a9401d7ff1141fd6, type: 3}
+  Pant: {fileID: 8300000, guid: d286632843cd8fb41abd68cfc672240e, type: 3}
   Shake: {fileID: 8300000, guid: ee8a0f3141b355842ac1c062d227f8cc, type: 3}
   pressARaw: 0
   pressBRaw: 0
@@ -1585,7 +1585,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   src: {fileID: 1258164670}
   Bark: {fileID: 8300000, guid: 81c3cbb2d906dcf47959ce0cf50f8d81, type: 3}
-  Pant: {fileID: 8300000, guid: c2b753330780bb84a9401d7ff1141fd6, type: 3}
+  Pant: {fileID: 8300000, guid: d286632843cd8fb41abd68cfc672240e, type: 3}
   Shake: {fileID: 8300000, guid: ee8a0f3141b355842ac1c062d227f8cc, type: 3}
   pressARaw: 0
   pressBRaw: 0
@@ -1835,7 +1835,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   src: {fileID: 1258164670}
   Bark: {fileID: 8300000, guid: 81c3cbb2d906dcf47959ce0cf50f8d81, type: 3}
-  Pant: {fileID: 8300000, guid: c2b753330780bb84a9401d7ff1141fd6, type: 3}
+  Pant: {fileID: 8300000, guid: d286632843cd8fb41abd68cfc672240e, type: 3}
   Shake: {fileID: 8300000, guid: ee8a0f3141b355842ac1c062d227f8cc, type: 3}
   pressARaw: 1
   pressBRaw: 0

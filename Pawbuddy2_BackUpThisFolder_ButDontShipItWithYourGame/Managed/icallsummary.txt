@@ -814,8 +814,10 @@ UnityEngine.Mesh::GetIndicesImpl
 UnityEngine.Mesh::GetTrianglesImpl
 UnityEngine.Mesh::GetBlendShapeName
 UnityEngine.Mesh::GetIndexCountImpl
+UnityEngine.Mesh::GetTrianglesCountImpl
 UnityEngine.Mesh::ClearImpl
 UnityEngine.Mesh::GetArrayFromChannelImpl
+UnityEngine.Mesh::GetTrianglesNonAllocImpl
 UnityEngine.Mesh::InternalSetIndexBufferData
 UnityEngine.Mesh::InternalSetIndexBufferDataFromArray
 UnityEngine.Mesh::InternalSetVertexBufferData
@@ -900,6 +902,7 @@ UnityEngine.ParticleSystem::Emit_Injected
 UnityEngine.ParticleSystem::Emit_Internal
 UnityEngine.ParticleSystemRenderer::GetMeshes
 UnityEngine.Physics::CheckBox_Internal_Injected
+UnityEngine.Physics::Query_ComputePenetration_Injected
 UnityEngine.Physics::get_invokeCollisionCallbacks
 UnityEngine.Physics::get_reuseCollisionCallbacks
 UnityEngine.Physics::BakeMesh
@@ -919,6 +922,7 @@ UnityEngine.Physics2D::GetRayIntersectionAll_Internal_Injected
 UnityEngine.PhysicsScene::Internal_RaycastTest_Injected
 UnityEngine.PhysicsScene::Internal_Raycast_Injected
 UnityEngine.PhysicsScene::Internal_RaycastNonAlloc_Injected
+UnityEngine.PhysicsScene::OverlapSphereNonAlloc_Internal_Injected
 UnityEngine.PhysicsScene2D::GetRayIntersectionArray_Internal_Injected
 UnityEngine.PhysicsScene2D::RaycastArray_Internal_Injected
 UnityEngine.PhysicsScene2D::RaycastList_Internal_Injected
@@ -1084,6 +1088,7 @@ UnityEngine.SkinnedMeshRenderer::set_sharedMesh
 UnityEngine.SkinnedMeshRenderer::set_updateWhenOffscreen
 UnityEngine.SkinnedMeshRenderer::get_sharedMesh
 UnityEngine.SortingLayer::GetLayerValueFromID
+UnityEngine.SphereCollider::set_radius
 UnityEngine.Sprite::GetPacked
 UnityEngine.Sprite::GetPackingRotation
 UnityEngine.Sprite::get_pixelsPerUnit

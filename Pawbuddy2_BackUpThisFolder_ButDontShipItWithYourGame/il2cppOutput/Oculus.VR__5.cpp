@@ -64,6 +64,17 @@ struct VirtualActionInvoker4
 		((Action)invokeData.methodPtr)(obj, p1, p2, p3, p4, invokeData.method);
 	}
 };
+template <typename T1, typename T2, typename T3, typename T4, typename T5, typename T6>
+struct VirtualActionInvoker6
+{
+	typedef void (*Action)(void*, T1, T2, T3, T4, T5, T6, const RuntimeMethod*);
+
+	static inline void Invoke (Il2CppMethodSlot slot, RuntimeObject* obj, T1 p1, T2 p2, T3 p3, T4 p4, T5 p5, T6 p6)
+	{
+		const VirtualInvokeData& invokeData = il2cpp_codegen_get_virtual_invoke_data(slot, obj);
+		((Action)invokeData.methodPtr)(obj, p1, p2, p3, p4, p5, p6, invokeData.method);
+	}
+};
 template <typename R>
 struct VirtualFuncInvoker0
 {
@@ -285,6 +296,7 @@ struct List_1_tF2FE88545EFEC788CAAE6C74EC2F78E937FCCAC3;
 struct List_1_tB951CE80B58D1BF9650862451D8DAD8C231F207B;
 struct List_1_tCADB61FF5C88BAE9F3ADDA6F46BB3C39491B1C15;
 struct List_1_t05915E9237850A58106982B7FE4BC5DA4E872E73;
+struct List_1_t6D4D3AAF46D9E2944E578579CE720FABFD990C26;
 struct List_1_t386E09F4F22DDE4D2AC41A8567FFF283C254537B;
 struct List_1_t47D92D044BD6BE23DD66F86497A9FB0EB0BB3A71;
 struct List_1_t961B63350603C7ECDDDCD6793D2157F9BE734EEA;
@@ -309,6 +321,7 @@ struct List_1_t2311A8AE9F316BB7FCC8EDA6E7973A3D0323EBE4;
 struct List_1_t54117678D575EF720799C3D3A62E42F16E619835;
 struct List_1_tFB3B8D8B7BE5503ECBA1D7F8AC630424F1211AFF;
 struct List_1_tA6D4A6B4BF2EFC3802C1F5D427B9BD392C6F9D87;
+struct List_1_t002562281B6798CDCF0267381EF8CB414A349636;
 struct Observable_1_t8B0ED472F997DCC0EB03DB275E12BFF3D1B970F8;
 struct Queue_1_t2D8AA86DE3946755295B50DF1080F04217A5EAD0;
 struct Queue_1_t013F2123BF26BC39731D677AAD204DAC9FFDBC43;
@@ -400,6 +413,7 @@ struct BaseRaycaster_t7DC8158FD3CA0193455344379DD5FF7CD5F1F832;
 struct Behaviour_t01970CFBBA658497AE30F311C447DB0440BAB7FA;
 struct BoxCollider_tFA5D239388334D6DE0B8FFDAD6825C5B03786E23;
 struct Button_t6786514A57F7AFDEE5431112FEA0CAB24F5AE098;
+struct Byte_t94D9231AC217BE4D2E004C4CD32DF6D099EA41A3;
 struct Camera_tA92CC927D7439999BC82DBEDC0AA45B470F9E184;
 struct CancellationTokenSource_tAAE1E0033BCFC233801F8CB4CED5C852B350CB7B;
 struct Canvas_t2DB4CEFDFF732884866C83F11ABF75F5AE8FFB26;
@@ -412,6 +426,7 @@ struct CustomYieldInstruction_t6B81A50D5D210C1ACAAE247FB53B65CDFFEB7617;
 struct DecoderFallback_t7324102215E4ED41EC065C02EB501CB0BC23CD90;
 struct Delegate_t;
 struct DelegateData_t9B286B493293CD2D23A5B2B5EF0E5B1324C2B77E;
+struct Double_tE150EF3D1D43DEE85D533810AB4C742307EEDE5F;
 struct EncoderFallback_tD2C40CE114AA9D8E1F7196608B2D088548015293;
 struct Encoding_t65CDEF28CF20A7B8C92E85A4E808920C2465F095;
 struct Enum_t2A1A94B24E3B776EEF4E5E485E290BB9D4D072E2;
@@ -427,6 +442,7 @@ struct IAsyncResult_t7B9B5A0ECB35DCEC31B8A8122C37D687369253B5;
 struct IDictionary_t6D03155AF1FA9083817AA5B6AD7DEEACC26AB220;
 struct IEnumerator_t7B609C2FFA6EB5167D9C62A0C32A21DE2F666DAA;
 struct InputField_tABEA115F23FBD374EBE80D4FAC1D15BD6E37A140;
+struct Int64_t092CFB123BE63C28ACDAF65C68F21A526050DBA3;
 struct IntPtr_t;
 struct InvalidOperationException_t5DDE4D49B7405FAAB1E4576F4715A42A3FAD4BAB;
 struct InvokableCallList_t309E1C8C7CE885A0D2F98C84CEA77A8935688382;
@@ -522,6 +538,7 @@ struct PassthroughCapabilities_t3B338539A7E4125FE79381628715BDC608471F9F;
 struct IOVRMeshRendererDataProvider_t96BC4E2FB6F71F5C57661CC6E45D44A647375CAC;
 struct ExternalSurfaceObjectCreated_tBAE280613D86A040CC365995D817E30254FDEF1A;
 struct StylesHandler_t1457F0B711E00BD6B732DA3D4750D7399E965F9E;
+struct Bool_tDCB915EFC1E982C5CEAE05C4AB9305574F7302CC;
 struct VirtualKeyboardModelAnimationStateBufferProvider_tBFE98FCBD874E5FAF702D416D929D9C7F7B75C94;
 struct VirtualKeyboardModelAnimationStateHandler_t3D618A978A812DAD7D9B3782EBFE56F41747913B;
 struct U3CCreateVolumeMeshU3Ed__7_tCC7A3176E5169C90A8F0E4EB8112284791A44D72;
@@ -555,7 +572,6 @@ struct WaitUntilKeyboardVisible_tD79B50AF856C21D21A2E29A4939FA177D5748D79;
 struct ReadWriteTask_t0821BF49EE38596C7734E86E1A6A39D769BE2C05;
 struct ToggleEvent_t88B31268F9D6D1882E4F921B14704FB9F7047F02;
 struct UriInfo_t5F91F77A93545DDDA6BB24A609BAF5E232CC1A09;
-struct U3CU3Ec_tFF0984A3E8C3018E05A90CDBA78ED33D9E839CFA;
 struct U3CRevertInteractorOverridesU3Ed__6_tB7DC19A74749E5012DBC713DFEABF7BB961B30BD;
 
 IL2CPP_EXTERN_C RuntimeClass* Action_1_t3CB5D1A819C3ED3F99E9E39F890F18633253949A_il2cpp_TypeInfo_var;
@@ -713,7 +729,6 @@ IL2CPP_EXTERN_C String_t* _stringLiteral109FD3A264B7308277ACD64F404FB14FB0E03303
 IL2CPP_EXTERN_C String_t* _stringLiteral11120E7E1FD02951F7DB385D1024244CE7CF500E;
 IL2CPP_EXTERN_C String_t* _stringLiteral1187D2B39B7DDEAF8FE68782177C91FF0E0B98D0;
 IL2CPP_EXTERN_C String_t* _stringLiteral12F90DC2E77C00708377336F16A976835048DC9D;
-IL2CPP_EXTERN_C String_t* _stringLiteral1489F923C4DCA729178B3E3233458550D8DDDF29;
 IL2CPP_EXTERN_C String_t* _stringLiteral16D549296814362ABAF781B3785E782B9DCD5530;
 IL2CPP_EXTERN_C String_t* _stringLiteral18E4C5DB8069025D974094A057F857AC864487AD;
 IL2CPP_EXTERN_C String_t* _stringLiteral196A606E7ED18CB341FC01E932AFB77192C3486B;
@@ -994,7 +1009,10 @@ IL2CPP_EXTERN_C const RuntimeMethod* List_1_get_Item_mD1048CD848E8C4A91EE6347880
 IL2CPP_EXTERN_C const RuntimeMethod* LoadOptions_set_Uuids_m3D24199D7ADB02E664815B97700A813EBDE304F8_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* MeshData_GetIndexData_TisInt32_t680FF22E76F6EFAD4375103CBBFFA0421349384C_m02AE32FCB152AE2BE8B20B22857BC1B64514E9B3_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* MeshData_GetVertexData_TisVector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2_m9114317AC8FD04F74E2728D7581DEC77914223E5_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* NativeArrayUnsafeUtility_GetUnsafeReadOnlyPtr_TisAnnotation_tD997D580E0E524DEA7DB2A481FB724AFD5009AF1_mE12DB580972B83E24810D3B9294BB6C156BBEB1E_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* NativeArrayUnsafeUtility_GetUnsafeReadOnlyPtr_TisUInt64_t8F12534CC8FC4B5860F2A2CD1EE79D322E7A41AF_m44EAE568720002EAD1F4ECE1CBA62E756FB05AFA_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* NativeArray_1_Dispose_m05C674E687B921C37722A6A1FF938FD56574642E_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* NativeArray_1_Dispose_m3F070B71AE63B3C38E737FEB785F74BC47AFF73D_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* NativeArray_1_Dispose_m5CBF60E97954A416106547EF28316741B674D253_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* NativeArray_1_Dispose_m6A910806AC209464EAA6E3C610E58B5CF6E98A0B_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* NativeArray_1_Dispose_m830401D26CD815000A993757313890E07051AEE7_RuntimeMethod_var;
@@ -1108,7 +1126,6 @@ IL2CPP_EXTERN_C const RuntimeMethod* U3CUpdateTrackingStateCoroutineU3Ed__92_Sys
 IL2CPP_EXTERN_C const RuntimeMethod* UnboundAnchor_BindTo_m1ECD15FCB5A770616927C260D09BFA69D064ADC7_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* UnboundAnchor_get_Pose_m5A45443D1663759FDDE6B98CED1A2A5ECE77C092_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* UnityEvent_1_AddListener_mEC384A8CFC5D4D41B62B08248A738CF61B82172F_RuntimeMethod_var;
-IL2CPP_EXTERN_C const RuntimeMethod* UnityEvent_1_Invoke_mA633B48B5D287DA856FB954AC3E4012487E63C15_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* UnityEvent_1_RemoveListener_m580353A1B030A82D1205B9BA94CF3484866C027F_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* ValueCollection_GetEnumerator_m6A92A2EB9F6D988C59C149196C04423575FCBDD8_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* ValueTuple_2__ctor_mB4A68FD3D62BCC43910A45BBD9F7474449B2D137_RuntimeMethod_var;
@@ -1704,6 +1721,12 @@ struct NativeArray_1_t97E2BFD61E13EEF2CDE34A313415FAD03AB993FD
 	int32_t ___m_AllocatorLabel;
 };
 struct NativeArray_1_t4B6FC554E5203176C3837F600E531A6814A599F7 
+{
+	void* ___m_Buffer;
+	int32_t ___m_Length;
+	int32_t ___m_AllocatorLabel;
+};
+struct NativeArray_1_t549C775701A480A632CACBFB674D1ED1FA52EB96 
 {
 	void* ___m_Buffer;
 	int32_t ___m_Length;
@@ -2427,6 +2450,145 @@ struct WaitUntilKeyboardVisible_tD79B50AF856C21D21A2E29A4939FA177D5748D79  : pub
 {
 	OVRVirtualKeyboard_t63B9829B9705A7EBB2E236CA38C35731E0BF8837* ____keyboard;
 };
+struct Variant_t1C24D2F331888502CEE4F0CF1646348E0261E25B 
+{
+	union
+	{
+		#pragma pack(push, tp, 1)
+		struct
+		{
+			int32_t ___Type;
+		};
+		#pragma pack(pop, tp)
+		struct
+		{
+			int32_t ___Type_forAlignmentOnly;
+		};
+		#pragma pack(push, tp, 1)
+		struct
+		{
+			char ___Count_OffsetPadding[4];
+			int32_t ___Count;
+		};
+		#pragma pack(pop, tp)
+		struct
+		{
+			char ___Count_OffsetPadding_forAlignmentOnly[4];
+			int32_t ___Count_forAlignmentOnly;
+		};
+		#pragma pack(push, tp, 1)
+		struct
+		{
+			char ___StringValue_OffsetPadding[8];
+			uint8_t* ___StringValue;
+		};
+		#pragma pack(pop, tp)
+		struct
+		{
+			char ___StringValue_OffsetPadding_forAlignmentOnly[8];
+			uint8_t* ___StringValue_forAlignmentOnly;
+		};
+		#pragma pack(push, tp, 1)
+		struct
+		{
+			char ___LongValue_OffsetPadding[8];
+			int64_t ___LongValue;
+		};
+		#pragma pack(pop, tp)
+		struct
+		{
+			char ___LongValue_OffsetPadding_forAlignmentOnly[8];
+			int64_t ___LongValue_forAlignmentOnly;
+		};
+		#pragma pack(push, tp, 1)
+		struct
+		{
+			char ___DoubleValue_OffsetPadding[8];
+			double ___DoubleValue;
+		};
+		#pragma pack(pop, tp)
+		struct
+		{
+			char ___DoubleValue_OffsetPadding_forAlignmentOnly[8];
+			double ___DoubleValue_forAlignmentOnly;
+		};
+		#pragma pack(push, tp, 1)
+		struct
+		{
+			char ___BoolValue_OffsetPadding[8];
+			int32_t ___BoolValue;
+		};
+		#pragma pack(pop, tp)
+		struct
+		{
+			char ___BoolValue_OffsetPadding_forAlignmentOnly[8];
+			int32_t ___BoolValue_forAlignmentOnly;
+		};
+		#pragma pack(push, tp, 1)
+		struct
+		{
+			char ___StringValues_OffsetPadding[8];
+			uint8_t** ___StringValues;
+		};
+		#pragma pack(pop, tp)
+		struct
+		{
+			char ___StringValues_OffsetPadding_forAlignmentOnly[8];
+			uint8_t** ___StringValues_forAlignmentOnly;
+		};
+		#pragma pack(push, tp, 1)
+		struct
+		{
+			char ___LongValues_OffsetPadding[8];
+			int64_t* ___LongValues;
+		};
+		#pragma pack(pop, tp)
+		struct
+		{
+			char ___LongValues_OffsetPadding_forAlignmentOnly[8];
+			int64_t* ___LongValues_forAlignmentOnly;
+		};
+		#pragma pack(push, tp, 1)
+		struct
+		{
+			char ___DoubleValues_OffsetPadding[8];
+			double* ___DoubleValues;
+		};
+		#pragma pack(pop, tp)
+		struct
+		{
+			char ___DoubleValues_OffsetPadding_forAlignmentOnly[8];
+			double* ___DoubleValues_forAlignmentOnly;
+		};
+		#pragma pack(push, tp, 1)
+		struct
+		{
+			char ___BoolValues_OffsetPadding[8];
+			int32_t* ___BoolValues;
+		};
+		#pragma pack(pop, tp)
+		struct
+		{
+			char ___BoolValues_OffsetPadding_forAlignmentOnly[8];
+			int32_t* ___BoolValues_forAlignmentOnly;
+		};
+	};
+};
+struct Builder_tCBCB06F4A2C922C71431C0418A7EA386E2383588 
+{
+	List_1_t002562281B6798CDCF0267381EF8CB414A349636* ____entries;
+	List_1_t6D4D3AAF46D9E2944E578579CE720FABFD990C26* ____ownedStrings;
+};
+struct Builder_tCBCB06F4A2C922C71431C0418A7EA386E2383588_marshaled_pinvoke
+{
+	List_1_t002562281B6798CDCF0267381EF8CB414A349636* ____entries;
+	List_1_t6D4D3AAF46D9E2944E578579CE720FABFD990C26* ____ownedStrings;
+};
+struct Builder_tCBCB06F4A2C922C71431C0418A7EA386E2383588_marshaled_com
+{
+	List_1_t002562281B6798CDCF0267381EF8CB414A349636* ____entries;
+	List_1_t6D4D3AAF46D9E2944E578579CE720FABFD990C26* ____ownedStrings;
+};
 struct Enumerator_t65BF8379C2704FD12EE27F4D817B9F735D9192A7 
 {
 	List_1_tC2C986EED7410CB5E1DF5AB517D7A2B0D4219342* ____list;
@@ -3103,6 +3265,11 @@ struct VirtualKeyboardTextureInfo_t0566040D5C4BDC799661941BF56FEDAF8A2CD481_mars
 	int32_t ___hasTexture;
 	List_1_t386E09F4F22DDE4D2AC41A8567FFF283C254537B* ___materials;
 };
+struct Annotation_tD997D580E0E524DEA7DB2A481FB724AFD5009AF1 
+{
+	uint8_t* ___Key;
+	Variant_t1C24D2F331888502CEE4F0CF1646348E0261E25B ___Value;
+};
 struct Enumerator_tE512E0CF7F6ABEA484F08996637164C0EAF2C284 
 {
 	int32_t ____listIndex;
@@ -3441,9 +3608,6 @@ struct Action_1_tC926860F20D428DA3E93D6FBA36420E904DD903B  : public MulticastDel
 {
 };
 struct Action_1_t88CC03E8C305DA991BBBCEBE79519B58D52F577F  : public MulticastDelegate_t
-{
-};
-struct Action_1_t6F9EB113EB3F16226AEF811A2744F4111C116C87  : public MulticastDelegate_t
 {
 };
 struct Action_1_t3CB5D1A819C3ED3F99E9E39F890F18633253949A  : public MulticastDelegate_t
@@ -5539,8 +5703,11 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void OVRTask_1_ContinueWith_m043A15A6A9F54129
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void OVRTask_1_ContinueWith_m06F435683B3F1FD5C9634881F96537D778728C27_gshared (OVRTask_1_t003E5D0FEDE751D213594F21DBEB8E3169305FE9* __this, Action_1_t6F9EB113EB3F16226AEF811A2744F4111C116C87* ___0_onCompleted, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void NativeArray_1_Dispose_m5CBF60E97954A416106547EF28316741B674D253_gshared (NativeArray_1_t07975297AD7F7512193094A7C0703BA872EF7A7B* __this, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Dictionary_2_set_Item_m8578BC82910E7B32F9712571A7E547AC9F6CA44A_gshared (Dictionary_2_t23FF393E49E2296FCA70BAE140470B03778A0D33* __this, uint64_t ___0_key, MultiAnchorDelegatePair_t549B7EC3028ED8DECFCC7801928095FCDD946E10 ___1_value, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void* NativeArrayUnsafeUtility_GetUnsafeReadOnlyPtr_TisUInt64_t8F12534CC8FC4B5860F2A2CD1EE79D322E7A41AF_m44EAE568720002EAD1F4ECE1CBA62E756FB05AFA_gshared (NativeArray_1_t07975297AD7F7512193094A7C0703BA872EF7A7B ___0_nativeArray, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR OVRLocatable_t95043A3275B61A287618088848038CAC6FAFFA7F OVRAnchor_GetComponent_TisOVRLocatable_t95043A3275B61A287618088848038CAC6FAFFA7F_m4DA1BCD1AF657B2581316BF7C9401FFB79EAA44A_gshared (OVRAnchor_tC6603E0C1628ACAA50D8CCDCC267BFD246F5A061* __this, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void InvertedCapture_2_ContinueTaskWith_m824317CCFECF20DC910D649463E9BA5204BD5DD1_gshared (OVRTask_1_tAF5413F2901FDD0987C924E6A3573C1FFEC4AFB9 ___0_task, Action_2_t979AFF408DA299E0AA292FEEB3C2633BBD5B4EBD* ___1_onCompleted, UnboundAnchor_tB94D982DC1C3B6FF028AD53B3D1CEFF5EFBAAF71 ___2_state, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void NativeArray_1_Dispose_m3F070B71AE63B3C38E737FEB785F74BC47AFF73D_gshared (NativeArray_1_t549C775701A480A632CACBFB674D1ED1FA52EB96* __this, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void* NativeArrayUnsafeUtility_GetUnsafeReadOnlyPtr_TisAnnotation_tD997D580E0E524DEA7DB2A481FB724AFD5009AF1_mE12DB580972B83E24810D3B9294BB6C156BBEB1E_gshared (NativeArray_1_t549C775701A480A632CACBFB674D1ED1FA52EB96 ___0_nativeArray, const RuntimeMethod* method) ;
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void Action_1_Invoke_m3879B064FDB31C39BCA16CAEB7736C541A5E146B_gshared_inline (Action_1_t4A1FFF844CF4B5548BE2B567D81244041341A902* __this, TrackedKeyboardSetActiveEvent_tC4974BE476053C526BBCA04CEBD40BA05EED61B5 ___0_obj, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* GameObject_AddComponent_TisRuntimeObject_m69B93700FACCF372F5753371C6E8FB780800B824_gshared (GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* __this, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* GameObject_GetComponentInChildren_TisRuntimeObject_mED181B37054A10395CA356010754C7DFC685893C_gshared (GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* __this, const RuntimeMethod* method) ;
@@ -5595,8 +5762,6 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR InteractorRootOverrideData_t704E41F84CC2D6340
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR int32_t Queue_1_get_Count_mAA6408F06A3C8FFE41968CA5C0DD7307A0382DA9_gshared_inline (Queue_1_t0F0BEF6F9203C2C3AF1DA45B19333E8D5551C67F* __this, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Queue_1__ctor_m4F7A853BFB70329454773C129306E228525924E5_gshared (Queue_1_t0F0BEF6F9203C2C3AF1DA45B19333E8D5551C67F* __this, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* Enumerable_First_TisRuntimeObject_mC6FA107934316BE28EA02DDB9EADA7AE8DD1916B_gshared (RuntimeObject* ___0_source, Func_2_tE1F0D41563EE092E5E5540B061449FDE88F1DC00* ___1_predicate, const RuntimeMethod* method) ;
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void UnityEvent_1_Invoke_m6CDC8B0639CE8935E2E13D10B2C8E500968130B6_gshared (UnityEvent_1_t3CE03B42D5873C0C0E0692BEE72E1E6D5399F205* __this, RuntimeObject* ___0_arg0, const RuntimeMethod* method) ;
-IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void Action_1_Invoke_mF2422B2DD29F74CE66F791C3F68E288EC7C3DB9E_gshared_inline (Action_1_t6F9EB113EB3F16226AEF811A2744F4111C116C87* __this, RuntimeObject* ___0_obj, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_NO_INLINE IL2CPP_METHOD_ATTR void List_1_AddWithResize_m79A9BF770BEF9C06BE40D5401E55E375F2726CC4_gshared (List_1_tA239CB83DE5615F348BB0507E45F490F4F7C9A8D* __this, RuntimeObject* ___0_item, const RuntimeMethod* method) ;
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR Guid_t Enumerator_get_Current_m5BDFDB5AA44517C4F8A36CBA191614C73D15E6CC_gshared_inline (Enumerator_t06F491A11F40F0FB608514965583E00AEB3DF411* __this, const RuntimeMethod* method) ;
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR Guid_t Enumerator_get_Current_m159C760D65DDC06FB928FA1209FBDCEF45145884_gshared_inline (Enumerator_t25F857D3E68D6D064D336F4D492AA5552FBA452C* __this, const RuntimeMethod* method) ;
@@ -5914,7 +6079,7 @@ inline int32_t OVREnumerable_1_GetCount_m5D57FF581250340F3739728BF7A72DFD17E6340
 {
 	return ((  int32_t (*) (OVREnumerable_1_t275DB2C048EF7F7BA894DDF421B0EEC4720BEB8C*, const RuntimeMethod*))OVREnumerable_1_GetCount_mBF61F622CAA2A93BC97093238FEA7C8A7ED52FD0_gshared)(__this, method);
 }
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t OVRPlugin_SaveSpaceList_mB68AFBFE5D4D273CA5C53856AAAA897680BA0DD2 (uint64_t* ___0_spaces, uint32_t ___1_numSpaces, int32_t ___2_location, uint64_t* ___3_requestId, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t OVRAnchor_SaveSpaceList_m355A74F88999E0BF0EC4ADE7B923CB659457EA93 (uint64_t* ___0_spaces, uint32_t ___1_numSpaces, int32_t ___2_location, uint64_t* ___3_requestId, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool OVRPlugin_IsSuccess_mEE88CFE2FC1D7DF1AE2BE4002D086A28D5244D68 (int32_t ___0_result, const RuntimeMethod* method) ;
 inline OVRTask_1_t7BA6F70975FEBA27ECE2ED056FAB38430155A7AD OVRTask_FromResult_TisOperationResult_tCEEF60CD40479FB5175A075F097BA5C1811E555D_m7AF622A38311246FA3A6BB04C32166B89DDDA0FB (int32_t ___0_result, const RuntimeMethod* method)
 {
@@ -6010,7 +6175,7 @@ inline void List_1_Add_m21AD515514CFFE5566101DCC22A9C2863F0130E7_inline (List_1_
 }
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR uint64_t OVRSpaceUser_get_Id_mC3F0C9C691EC5C53A4007E55C4F97874C0F8F64C (OVRSpaceUser_tF145982B655F69985F22D9AB527F17FC76CDC90F* __this, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR OVRTask_1_tAF5413F2901FDD0987C924E6A3573C1FFEC4AFB9 OVRSpatialAnchor_EraseAsync_mFE8C548AD1D860CE8A1B1FFCD572E1A0769F33FD (OVRSpatialAnchor_t934BFAE22D42E703A59DD025972C1FBF22381874* __this, EraseOptions_t0DEF3EFFC468BED7DE1829DF69EAF84858C84DB2 ___0_eraseOptions, const RuntimeMethod* method) ;
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool OVRPlugin_EraseSpace_m6EA51C5FD8165982A9A8C4404EEEF61C0FCF1D52 (uint64_t ___0_space, int32_t ___1_location, uint64_t* ___2_requestId, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t OVRAnchor_EraseSpace_m0D1CCA5CCE4114B211F291DA6FB4423A931669BA (uint64_t ___0_space, int32_t ___1_location, uint64_t* ___2_requestId, const RuntimeMethod* method) ;
 inline OVRTask_1_tAF5413F2901FDD0987C924E6A3573C1FFEC4AFB9 OVRTask_FromResult_TisBoolean_t09A6377A54BE2F9E6985A8149F19234FD7DDFE22_mA8BCDD3EF6E2CAB6F5DDEB087F558B23A216FF81 (bool ___0_result, const RuntimeMethod* method)
 {
 	return ((  OVRTask_1_tAF5413F2901FDD0987C924E6A3573C1FFEC4AFB9 (*) (bool, const RuntimeMethod*))OVRTask_FromResult_TisBoolean_t09A6377A54BE2F9E6985A8149F19234FD7DDFE22_mA8BCDD3EF6E2CAB6F5DDEB087F558B23A216FF81_gshared)(___0_result, method);
@@ -6372,7 +6537,10 @@ inline void Dictionary_2_set_Item_m8578BC82910E7B32F9712571A7E547AC9F6CA44A (Dic
 {
 	((  void (*) (Dictionary_2_t23FF393E49E2296FCA70BAE140470B03778A0D33*, uint64_t, MultiAnchorDelegatePair_t549B7EC3028ED8DECFCC7801928095FCDD946E10, const RuntimeMethod*))Dictionary_2_set_Item_m8578BC82910E7B32F9712571A7E547AC9F6CA44A_gshared)(__this, ___0_key, ___1_value, method);
 }
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t OVRPlugin_SaveSpaceList_m7C64FA741045A22005534AD460C9707855784D57 (NativeArray_1_t07975297AD7F7512193094A7C0703BA872EF7A7B ___0_spaces, int32_t ___1_location, uint64_t* ___2_requestId, const RuntimeMethod* method) ;
+inline void* NativeArrayUnsafeUtility_GetUnsafeReadOnlyPtr_TisUInt64_t8F12534CC8FC4B5860F2A2CD1EE79D322E7A41AF_m44EAE568720002EAD1F4ECE1CBA62E756FB05AFA (NativeArray_1_t07975297AD7F7512193094A7C0703BA872EF7A7B ___0_nativeArray, const RuntimeMethod* method)
+{
+	return ((  void* (*) (NativeArray_1_t07975297AD7F7512193094A7C0703BA872EF7A7B, const RuntimeMethod*))NativeArrayUnsafeUtility_GetUnsafeReadOnlyPtr_TisUInt64_t8F12534CC8FC4B5860F2A2CD1EE79D322E7A41AF_m44EAE568720002EAD1F4ECE1CBA62E756FB05AFA_gshared)(___0_nativeArray, method);
+}
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR int32_t LoadOptions_get_StorageLocation_mB91290268C7FFB7716945BA11D5CA38D90CC9D1B_inline (LoadOptions_t4D7672A5DE9936611714342503F8006F064EE3D1* __this, const RuntimeMethod* method) ;
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void LoadOptions_set_StorageLocation_m2EFCE6BEF4A7923519F4CD25F15EB535E59A4F84_inline (LoadOptions_t4D7672A5DE9936611714342503F8006F064EE3D1* __this, int32_t ___0_value, const RuntimeMethod* method) ;
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR int32_t LoadOptions_get_MaxAnchorCount_m1F83A004DD0097A6098E74299BA9110E6370BDF3_inline (LoadOptions_t4D7672A5DE9936611714342503F8006F064EE3D1* __this, const RuntimeMethod* method) ;
@@ -6427,10 +6595,20 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR int32_t MarkerPoint_get_NameHandl
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR TelemetryClient_t9CE1E8181AB1E214F15A8AE5ED3356FF9B895F0C* OVRTelemetry_get_Client_m6F963685F8C47B1F2C54488CD483EF1FD20C3BB1 (const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MarkerPoint__ctor_mC5FFE9FAF9B6791C3628BFBFCA07DFCDAF1333A5 (MarkerPoint_tD0093D390E3853BA1F6E6152266F27A752D273FE* __this, String_t* ___0_name, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MarkerPoint_Dispose_mFF596C8BB6FE00089190AA25ECC2E6C9B39EFFE3 (MarkerPoint_tD0093D390E3853BA1F6E6152266F27A752D273FE* __this, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Variant_t1C24D2F331888502CEE4F0CF1646348E0261E25B Variant_From_m59443563F9FC97D8B2E745DD9251A97DF516C422 (bool ___0_value, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Variant_t1C24D2F331888502CEE4F0CF1646348E0261E25B Variant_From_m966A3EFB5E5C6681370730E296597D3A264B0A71 (int64_t ___0_value, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Variant_t1C24D2F331888502CEE4F0CF1646348E0261E25B Variant_From_m94C993CD0AF7A257D140E838D9D81EAE935C4AFE (double ___0_value, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Variant_t1C24D2F331888502CEE4F0CF1646348E0261E25B Variant_From_mE5B70E43700809A3A371B578AF2186B761A8949A (uint8_t** ___0_values, int32_t ___1_count, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Variant_t1C24D2F331888502CEE4F0CF1646348E0261E25B Variant_From_mF102B8DB58F225CEF4188D8D5FD57424FCE38668 (int64_t* ___0_values, int32_t ___1_count, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Variant_t1C24D2F331888502CEE4F0CF1646348E0261E25B Variant_From_m1E2F43D7D7F982C66D61AF6410251001A89FA87C (double* ___0_values, int32_t ___1_count, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Variant_t1C24D2F331888502CEE4F0CF1646348E0261E25B Variant_From_mF05BFB9DF644D23E170B0D5B2D49F5396234A523 (int32_t* ___0_values, int32_t ___1_count, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TelemetryClient__ctor_mDA491D1124513679C26983C11866D7A1D057778B (TelemetryClient_t9CE1E8181AB1E214F15A8AE5ED3356FF9B895F0C* __this, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Qpl_MarkerStart_mC6481C335D3CE9E1950140E9C037ECFB1C351661 (int32_t ___0_markerId, int32_t ___1_instanceKey, int64_t ___2_timestampMs, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Qpl_MarkerPointCached_mEAD80D8688E68831D8DAC7C13F8F61CB62BCC8ED (int32_t ___0_markerId, int32_t ___1_nameHandle, int32_t ___2_instanceKey, int64_t ___3_timestampMs, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t Qpl_MarkerPoint_mCD163E74755FA459E36727386E7467B0E85707D0 (int32_t ___0_markerId, String_t* ___1_name, int32_t ___2_instanceKey, int64_t ___3_timestampMs, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t Qpl_MarkerPoint_m9B85544CC91084672C4F14E8C014688E2954152B (int32_t ___0_markerId, String_t* ___1_name, Annotation_tD997D580E0E524DEA7DB2A481FB724AFD5009AF1* ___2_annotations, int32_t ___3_annotationCount, int32_t ___4_instanceKey, int64_t ___5_timestampMs, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Qpl_MarkerAnnotation_mF27117DAF4F9C05F6981389CB9A7BF85241D4377 (int32_t ___0_markerId, String_t* ___1_annotationKey, String_t* ___2_annotationValue, int32_t ___3_instanceKey, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t Qpl_MarkerAnnotation_m0A8DE8512A349CEADBECC1C4B6D2224FE7FE4810 (int32_t ___0_markerId, String_t* ___1_annotationKey, Variant_t1C24D2F331888502CEE4F0CF1646348E0261E25B ___2_annotationValue, int32_t ___3_instanceKey, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Qpl_MarkerEnd_mA4AFDC44EB1D0DF3F00CFA64B09CB94CAE7993E6 (int32_t ___0_markerId, int16_t ___1_resultTypeId, int32_t ___2_instanceKey, int64_t ___3_timestampMs, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Qpl_CreateMarkerHandle_mB7DA71C8CB121C5D819BB07AD5542EDDCE51E215 (String_t* ___0_name, int32_t* ___1_nameHandle, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Qpl_DestroyMarkerHandle_mCD3FA8509AAF827EA8C33E8293C5E353702245D3 (int32_t ___0_nameHandle, const RuntimeMethod* method) ;
@@ -6445,6 +6623,20 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR int32_t OVRTelemetryMarker_get_Ma
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR int32_t OVRTelemetryMarker_get_InstanceKey_m8BE3D5A45BC7A2A74756AE5CCF7923C0CD942DB8_inline (OVRTelemetryMarker_t9BCBB9BBB77B5411E3F71019A5F880C1A16E60F9* __this, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void OVRTelemetryMarker__ctor_m7F778863CB73397C5E546FE8BF9E4950779A66EA (OVRTelemetryMarker_t9BCBB9BBB77B5411E3F71019A5F880C1A16E60F9* __this, TelemetryClient_t9CE1E8181AB1E214F15A8AE5ED3356FF9B895F0C* ___0_client, int32_t ___1_markerId, int32_t ___2_instanceKey, int64_t ___3_timestampMs, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void OVRTelemetryMarkerState__ctor_mEDE94917A6DC20AE86839521C8D560540097867F (OVRTelemetryMarkerState_t7788BDD8B57870A98B1A0612EE7B2B5AB27A862E* __this, bool ___0_sent, int16_t ___1_result, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TelemetryClient_MarkerAnnotation_mBD7EC1325A16BF996AAC5400820633F215176669 (TelemetryClient_t9CE1E8181AB1E214F15A8AE5ED3356FF9B895F0C* __this, int32_t ___0_markerId, String_t* ___1_annotationKey, bool ___2_annotationValue, int32_t ___3_instanceKey, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR OVRTelemetryMarker_t9BCBB9BBB77B5411E3F71019A5F880C1A16E60F9 OVRTelemetryMarker_AddAnnotation_m1D191919DD202C611BC1B8277EE6CE5B5D33A347 (OVRTelemetryMarker_t9BCBB9BBB77B5411E3F71019A5F880C1A16E60F9* __this, String_t* ___0_annotationKey, bool ___1_annotationValue, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TelemetryClient_MarkerAnnotation_mC7BF4638F616B1601435C9F9120FB714CDE9D1E1 (TelemetryClient_t9CE1E8181AB1E214F15A8AE5ED3356FF9B895F0C* __this, int32_t ___0_markerId, String_t* ___1_annotationKey, double ___2_annotationValue, int32_t ___3_instanceKey, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR OVRTelemetryMarker_t9BCBB9BBB77B5411E3F71019A5F880C1A16E60F9 OVRTelemetryMarker_AddAnnotation_m022CC9192828D288D8129F069DF3DD986A17D8DE (OVRTelemetryMarker_t9BCBB9BBB77B5411E3F71019A5F880C1A16E60F9* __this, String_t* ___0_annotationKey, double ___1_annotationValue, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TelemetryClient_MarkerAnnotation_m48444F1D50C6A075A2492C21CB8F2DEDAC47E17A (TelemetryClient_t9CE1E8181AB1E214F15A8AE5ED3356FF9B895F0C* __this, int32_t ___0_markerId, String_t* ___1_annotationKey, int64_t ___2_annotationValue, int32_t ___3_instanceKey, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR OVRTelemetryMarker_t9BCBB9BBB77B5411E3F71019A5F880C1A16E60F9 OVRTelemetryMarker_AddAnnotation_m168F2976545293D401AADDFDB0E03D9944AF2F39 (OVRTelemetryMarker_t9BCBB9BBB77B5411E3F71019A5F880C1A16E60F9* __this, String_t* ___0_annotationKey, int64_t ___1_annotationValue, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TelemetryClient_MarkerAnnotation_m0845DF6D0933C7387B3A68EB6D7CEAD2F0A19D54 (TelemetryClient_t9CE1E8181AB1E214F15A8AE5ED3356FF9B895F0C* __this, int32_t ___0_markerId, String_t* ___1_annotationKey, uint8_t** ___2_annotationValues, int32_t ___3_count, int32_t ___4_instanceKey, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR OVRTelemetryMarker_t9BCBB9BBB77B5411E3F71019A5F880C1A16E60F9 OVRTelemetryMarker_AddAnnotation_m35C2F2722A9C668387D9338313F071E390D5C385 (OVRTelemetryMarker_t9BCBB9BBB77B5411E3F71019A5F880C1A16E60F9* __this, String_t* ___0_annotationKey, uint8_t** ___1_annotationValues, int32_t ___2_count, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TelemetryClient_MarkerAnnotation_mBB9F92F64179B1AD96E44C50184979EBA74E747E (TelemetryClient_t9CE1E8181AB1E214F15A8AE5ED3356FF9B895F0C* __this, int32_t ___0_markerId, String_t* ___1_annotationKey, int64_t* ___2_annotationValues, int32_t ___3_count, int32_t ___4_instanceKey, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR OVRTelemetryMarker_t9BCBB9BBB77B5411E3F71019A5F880C1A16E60F9 OVRTelemetryMarker_AddAnnotation_mF4092948CDA9ACBD39B3E7AEDB5D75103947EFA3 (OVRTelemetryMarker_t9BCBB9BBB77B5411E3F71019A5F880C1A16E60F9* __this, String_t* ___0_annotationKey, int64_t* ___1_annotationValues, int32_t ___2_count, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TelemetryClient_MarkerAnnotation_m69EDBAB42A8DBAEEA36AA16AE804194D055C8DC9 (TelemetryClient_t9CE1E8181AB1E214F15A8AE5ED3356FF9B895F0C* __this, int32_t ___0_markerId, String_t* ___1_annotationKey, double* ___2_annotationValues, int32_t ___3_count, int32_t ___4_instanceKey, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR OVRTelemetryMarker_t9BCBB9BBB77B5411E3F71019A5F880C1A16E60F9 OVRTelemetryMarker_AddAnnotation_m8C69AF3EC83FAE7E46AA9E3FCE1D209541807B1E (OVRTelemetryMarker_t9BCBB9BBB77B5411E3F71019A5F880C1A16E60F9* __this, String_t* ___0_annotationKey, double* ___1_annotationValues, int32_t ___2_count, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TelemetryClient_MarkerAnnotation_mAC65B2AF8A73B53558C2DC400F45C1A16AD81C0D (TelemetryClient_t9CE1E8181AB1E214F15A8AE5ED3356FF9B895F0C* __this, int32_t ___0_markerId, String_t* ___1_annotationKey, int32_t* ___2_annotationValues, int32_t ___3_count, int32_t ___4_instanceKey, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR OVRTelemetryMarker_t9BCBB9BBB77B5411E3F71019A5F880C1A16E60F9 OVRTelemetryMarker_AddAnnotation_m0455849C5302C5530B9DB448878FE93D134E2C8A (OVRTelemetryMarker_t9BCBB9BBB77B5411E3F71019A5F880C1A16E60F9* __this, String_t* ___0_annotationKey, int32_t* ___1_annotationValues, int32_t ___2_count, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR OVRTelemetryMarker_t9BCBB9BBB77B5411E3F71019A5F880C1A16E60F9 OVRTelemetryMarker_AddAnnotationIfNotNullOrEmpty_m103B3621D75D657C9C1FFAC11717BA56DD0A6BAF (OVRTelemetryMarker_t9BCBB9BBB77B5411E3F71019A5F880C1A16E60F9* __this, String_t* ___0_annotationKey, String_t* ___1_annotationValue, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* Application_get_identifier_mEA3314E50D44FB3CE2C2E78B336ACF4AD97BA056 (const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* Application_get_unityVersion_m27BB3207901305BD239E1C3A74035E15CF3E5D21 (const RuntimeMethod* method) ;
@@ -6454,6 +6646,18 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* OVRRuntimeSettings_get_TelemetryPro
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* OVRTelemetryMarker_get_UnityVersion_m571CB9D7F3A2973DA79577A164406FFB08D3ADE0 (const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR OVRTelemetryMarker_t9BCBB9BBB77B5411E3F71019A5F880C1A16E60F9 OVRTelemetryMarker_SendIf_m36F4ABE8F20DF2D5A8EF6DF6A56702D025F75D2F (OVRTelemetryMarker_t9BCBB9BBB77B5411E3F71019A5F880C1A16E60F9* __this, bool ___0_condition, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR OVRTelemetryMarker_t9BCBB9BBB77B5411E3F71019A5F880C1A16E60F9 OVRTelemetryMarker_AddPoint_m5DF94030CCE86DDE95347ECF9A4C581ADF85E2E9 (OVRTelemetryMarker_t9BCBB9BBB77B5411E3F71019A5F880C1A16E60F9* __this, MarkerPoint_tD0093D390E3853BA1F6E6152266F27A752D273FE ___0_point, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR OVRTelemetryMarker_t9BCBB9BBB77B5411E3F71019A5F880C1A16E60F9 OVRTelemetryMarker_AddPoint_m3C8FBFB5BF6C9CD6F013BD5416623EFFD529F655 (OVRTelemetryMarker_t9BCBB9BBB77B5411E3F71019A5F880C1A16E60F9* __this, String_t* ___0_name, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR NativeArray_1_t549C775701A480A632CACBFB674D1ED1FA52EB96 Builder_ToNativeArray_m55B682A0D2641BE76D3820CC74ACC00FC3FEB435 (Builder_tCBCB06F4A2C922C71431C0418A7EA386E2383588* __this, int32_t ___0_allocator, const RuntimeMethod* method) ;
+inline void NativeArray_1_Dispose_m3F070B71AE63B3C38E737FEB785F74BC47AFF73D (NativeArray_1_t549C775701A480A632CACBFB674D1ED1FA52EB96* __this, const RuntimeMethod* method)
+{
+	((  void (*) (NativeArray_1_t549C775701A480A632CACBFB674D1ED1FA52EB96*, const RuntimeMethod*))NativeArray_1_Dispose_m3F070B71AE63B3C38E737FEB785F74BC47AFF73D_gshared)(__this, method);
+}
+inline void* NativeArrayUnsafeUtility_GetUnsafeReadOnlyPtr_TisAnnotation_tD997D580E0E524DEA7DB2A481FB724AFD5009AF1_mE12DB580972B83E24810D3B9294BB6C156BBEB1E (NativeArray_1_t549C775701A480A632CACBFB674D1ED1FA52EB96 ___0_nativeArray, const RuntimeMethod* method)
+{
+	return ((  void* (*) (NativeArray_1_t549C775701A480A632CACBFB674D1ED1FA52EB96, const RuntimeMethod*))NativeArrayUnsafeUtility_GetUnsafeReadOnlyPtr_TisAnnotation_tD997D580E0E524DEA7DB2A481FB724AFD5009AF1_mE12DB580972B83E24810D3B9294BB6C156BBEB1E_gshared)(___0_nativeArray, method);
+}
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR OVRTelemetryMarker_t9BCBB9BBB77B5411E3F71019A5F880C1A16E60F9 OVRTelemetryMarker_AddPoint_m6F4E7DCA2D2EE8FFF249687BC14A3144865881BA (OVRTelemetryMarker_t9BCBB9BBB77B5411E3F71019A5F880C1A16E60F9* __this, String_t* ___0_name, Annotation_tD997D580E0E524DEA7DB2A481FB724AFD5009AF1* ___1_annotations, int32_t ___2_annotationCount, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR OVRTelemetryMarker_t9BCBB9BBB77B5411E3F71019A5F880C1A16E60F9 OVRTelemetryMarker_AddPoint_m5F24BFE1B95E8FAE7D052AAAD6D1AFF061A864C6 (OVRTelemetryMarker_t9BCBB9BBB77B5411E3F71019A5F880C1A16E60F9* __this, String_t* ___0_name, Builder_tCBCB06F4A2C922C71431C0418A7EA386E2383588 ___1_annotationBuilder, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void OVRTelemetryMarker_Dispose_mED4BBD01B132F320379441AD2B7ACADB7C10E0DF (OVRTelemetryMarker_t9BCBB9BBB77B5411E3F71019A5F880C1A16E60F9* __this, const RuntimeMethod* method) ;
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void OVRTelemetryMarkerState_set_Sent_m7FC6E3CD416908A6A4D9C36E7212BB7F99E2F62D_inline (OVRTelemetryMarkerState_t7788BDD8B57870A98B1A0612EE7B2B5AB27A862E* __this, bool ___0_value, const RuntimeMethod* method) ;
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void OVRTelemetryMarkerState_set_Result_m7AB330930A9342A742B1533A77F9E663585824F1_inline (OVRTelemetryMarkerState_t7788BDD8B57870A98B1A0612EE7B2B5AB27A862E* __this, int16_t ___0_value, const RuntimeMethod* method) ;
@@ -7077,19 +7281,6 @@ inline OVRBone_tB3106B7D44FF86F8A767E0E6160EAB259B70A14A* Enumerable_First_TisOV
 {
 	return ((  OVRBone_tB3106B7D44FF86F8A767E0E6160EAB259B70A14A* (*) (RuntimeObject*, Func_2_t7E8FC38DC149D5AA9EF9DEA047AB30494020D412*, const RuntimeMethod*))Enumerable_First_TisRuntimeObject_mC6FA107934316BE28EA02DDB9EADA7AE8DD1916B_gshared)(___0_source, ___1_predicate, method);
 }
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CU3Ec__ctor_m903DF6271441EBCED1B2A58D87A2D7EAAA9A64B1 (U3CU3Ec_tFF0984A3E8C3018E05A90CDBA78ED33D9E839CFA* __this, const RuntimeMethod* method) ;
-IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR int32_t OVRBone_get_Id_m4BC533EE83B90F49F45D80E64A5EC5572E37E06C_inline (OVRBone_tB3106B7D44FF86F8A767E0E6160EAB259B70A14A* __this, const RuntimeMethod* method) ;
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* String_Replace_mABDB7003A1D0AEDCAE9FF85E3DFFFBA752D2A166 (String_t* __this, String_t* ___0_oldValue, String_t* ___1_newValue, const RuntimeMethod* method) ;
-inline void UnityEvent_1_Invoke_mA633B48B5D287DA856FB954AC3E4012487E63C15 (UnityEvent_1_tC9859540CF1468306CAB6D758C0A0D95DBCEC257* __this, String_t* ___0_arg0, const RuntimeMethod* method)
-{
-	((  void (*) (UnityEvent_1_tC9859540CF1468306CAB6D758C0A0D95DBCEC257*, String_t*, const RuntimeMethod*))UnityEvent_1_Invoke_m6CDC8B0639CE8935E2E13D10B2C8E500968130B6_gshared)(__this, ___0_arg0, method);
-}
-inline void Action_1_Invoke_m690438AAE38F9762172E3AE0A33D0B42ACD35790_inline (Action_1_t3CB5D1A819C3ED3F99E9E39F890F18633253949A* __this, String_t* ___0_obj, const RuntimeMethod* method)
-{
-	((  void (*) (Action_1_t3CB5D1A819C3ED3F99E9E39F890F18633253949A*, String_t*, const RuntimeMethod*))Action_1_Invoke_mF2422B2DD29F74CE66F791C3F68E288EC7C3DB9E_gshared_inline)(__this, ___0_obj, method);
-}
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void UnityEvent_Invoke_mFBF80D59B03C30C5FE6A06F897D954ACADE061D2 (UnityEvent_tDC2C3548799DBC91D1E3F3DE60083A66F4751977* __this, const RuntimeMethod* method) ;
-IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void Action_Invoke_m7126A54DACA72B845424072887B5F3A51FC3808E_inline (Action_tD00B0A84D7945E50C2DFFC28EFEE6ED44ED2AD07* __this, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Quaternion_tDA59F214EF07D7700B26E40E562F267AF7306974 Quaternion_Internal_FromEulerRad_m66D4475341F53949471E6870FB5C5E4A5E9BA93E (Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___0_euler, const RuntimeMethod* method) ;
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR float Vector3_Dot_mBB86BB940AA0A32FA7D3C02AC42E5BC7095A5D52_inline (Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___0_lhs, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___1_rhs, const RuntimeMethod* method) ;
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 Vector3_Normalize_mEF8349CC39674236CFC694189AFD36E31F89AC8F_inline (Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___0_value, const RuntimeMethod* method) ;
@@ -10454,11 +10645,12 @@ IL_006e:
 		int32_t L_19 = L_18.___Storage;
 		int32_t L_20;
 		L_20 = OVRExtensions_ToSpaceStorageLocation_mFF7C8770305D5CFCCB62FB78319A81CEFFF6926C(L_19, NULL);
-		il2cpp_codegen_runtime_class_init_inline(OVRPlugin_t0BF53CAD10A7503BB132A303469F2E0A639E696B_il2cpp_TypeInfo_var);
+		il2cpp_codegen_runtime_class_init_inline(OVRAnchor_tC6603E0C1628ACAA50D8CCDCC267BFD246F5A061_il2cpp_TypeInfo_var);
 		int32_t L_21;
-		L_21 = OVRPlugin_SaveSpaceList_mB68AFBFE5D4D273CA5C53856AAAA897680BA0DD2(L_16, L_17, L_20, (&V_4), NULL);
+		L_21 = OVRAnchor_SaveSpaceList_m355A74F88999E0BF0EC4ADE7B923CB659457EA93(L_16, L_17, L_20, (&V_4), NULL);
 		V_3 = L_21;
 		int32_t L_22 = V_3;
+		il2cpp_codegen_runtime_class_init_inline(OVRPlugin_t0BF53CAD10A7503BB132A303469F2E0A639E696B_il2cpp_TypeInfo_var);
 		bool L_23;
 		L_23 = OVRPlugin_IsSuccess_mEE88CFE2FC1D7DF1AE2BE4002D086A28D5244D68(L_22, NULL);
 		if (L_23)
@@ -11191,26 +11383,28 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR OVRTask_1_tAF5413F2901FDD0987C924E6A3573C1FFE
 		int32_t L_3 = L_2.___Storage;
 		int32_t L_4;
 		L_4 = OVRExtensions_ToSpaceStorageLocation_mFF7C8770305D5CFCCB62FB78319A81CEFFF6926C(L_3, NULL);
+		int32_t L_5;
+		L_5 = OVRAnchor_EraseSpace_m0D1CCA5CCE4114B211F291DA6FB4423A931669BA(L_1, L_4, (&V_0), NULL);
 		il2cpp_codegen_runtime_class_init_inline(OVRPlugin_t0BF53CAD10A7503BB132A303469F2E0A639E696B_il2cpp_TypeInfo_var);
-		bool L_5;
-		L_5 = OVRPlugin_EraseSpace_m6EA51C5FD8165982A9A8C4404EEEF61C0FCF1D52(L_1, L_4, (&V_0), NULL);
-		if (L_5)
+		bool L_6;
+		L_6 = OVRPlugin_IsSuccess_mEE88CFE2FC1D7DF1AE2BE4002D086A28D5244D68(L_5, NULL);
+		if (L_6)
 		{
-			goto IL_0029;
+			goto IL_002e;
 		}
 	}
 	{
-		OVRTask_1_tAF5413F2901FDD0987C924E6A3573C1FFEC4AFB9 L_6;
-		L_6 = OVRTask_FromResult_TisBoolean_t09A6377A54BE2F9E6985A8149F19234FD7DDFE22_mA8BCDD3EF6E2CAB6F5DDEB087F558B23A216FF81((bool)0, OVRTask_FromResult_TisBoolean_t09A6377A54BE2F9E6985A8149F19234FD7DDFE22_mA8BCDD3EF6E2CAB6F5DDEB087F558B23A216FF81_RuntimeMethod_var);
-		return L_6;
+		OVRTask_1_tAF5413F2901FDD0987C924E6A3573C1FFEC4AFB9 L_7;
+		L_7 = OVRTask_FromResult_TisBoolean_t09A6377A54BE2F9E6985A8149F19234FD7DDFE22_mA8BCDD3EF6E2CAB6F5DDEB087F558B23A216FF81((bool)0, OVRTask_FromResult_TisBoolean_t09A6377A54BE2F9E6985A8149F19234FD7DDFE22_mA8BCDD3EF6E2CAB6F5DDEB087F558B23A216FF81_RuntimeMethod_var);
+		return L_7;
 	}
 
-IL_0029:
+IL_002e:
 	{
-		uint64_t L_7 = V_0;
-		OVRTask_1_tAF5413F2901FDD0987C924E6A3573C1FFEC4AFB9 L_8;
-		L_8 = OVRTask_FromRequest_TisBoolean_t09A6377A54BE2F9E6985A8149F19234FD7DDFE22_mE08CE38277CFE673A66D22E4B21F3CCCB0BAE660(L_7, OVRTask_FromRequest_TisBoolean_t09A6377A54BE2F9E6985A8149F19234FD7DDFE22_mE08CE38277CFE673A66D22E4B21F3CCCB0BAE660_RuntimeMethod_var);
-		return L_8;
+		uint64_t L_8 = V_0;
+		OVRTask_1_tAF5413F2901FDD0987C924E6A3573C1FFEC4AFB9 L_9;
+		L_9 = OVRTask_FromRequest_TisBoolean_t09A6377A54BE2F9E6985A8149F19234FD7DDFE22_mE08CE38277CFE673A66D22E4B21F3CCCB0BAE660(L_8, OVRTask_FromRequest_TisBoolean_t09A6377A54BE2F9E6985A8149F19234FD7DDFE22_mE08CE38277CFE673A66D22E4B21F3CCCB0BAE660_RuntimeMethod_var);
+		return L_9;
 	}
 }
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void OVRSpatialAnchor_ThrowIfBound_m4992067AA04EACF8131FD41044C5D72DDE8CF717 (Guid_t ___0_uuid, const RuntimeMethod* method) 
@@ -13560,7 +13754,9 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void OVRSpatialAnchor_Save_m88DEEEC8D6A719DBF
 	if (!s_Il2CppMethodInitialized)
 	{
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Dictionary_2_set_Item_m8578BC82910E7B32F9712571A7E547AC9F6CA44A_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&NativeArrayUnsafeUtility_GetUnsafeReadOnlyPtr_TisUInt64_t8F12534CC8FC4B5860F2A2CD1EE79D322E7A41AF_m44EAE568720002EAD1F4ECE1CBA62E756FB05AFA_RuntimeMethod_var);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&NativeArray_1_Dispose_m5CBF60E97954A416106547EF28316741B674D253_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&OVRAnchor_tC6603E0C1628ACAA50D8CCDCC267BFD246F5A061_il2cpp_TypeInfo_var);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&OVRPlugin_t0BF53CAD10A7503BB132A303469F2E0A639E696B_il2cpp_TypeInfo_var);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&OVRSpatialAnchor_t934BFAE22D42E703A59DD025972C1FBF22381874_il2cpp_TypeInfo_var);
 		s_Il2CppMethodInitialized = true;
@@ -13596,7 +13792,7 @@ IL_000e:
 		auto __finallyBlock = il2cpp::utils::Finally([&]
 		{
 
-FINALLY_006b:
+FINALLY_0077:
 			{
 				NativeArray_1_Dispose_m5CBF60E97954A416106547EF28316741B674D253((&V_0), NativeArray_1_Dispose_m5CBF60E97954A416106547EF28316741B674D253_RuntimeMethod_var);
 				return;
@@ -13606,61 +13802,66 @@ FINALLY_006b:
 		{
 			{
 				NativeArray_1_t07975297AD7F7512193094A7C0703BA872EF7A7B L_4 = V_0;
-				SaveOptions_tF36AB43DCE88CE295BFF83811A0DA1573B5FE5F7 L_5 = ___1_saveOptions;
-				int32_t L_6 = L_5.___Storage;
-				int32_t L_7;
-				L_7 = OVRExtensions_ToSpaceStorageLocation_mFF7C8770305D5CFCCB62FB78319A81CEFFF6926C(L_6, NULL);
+				void* L_5;
+				L_5 = NativeArrayUnsafeUtility_GetUnsafeReadOnlyPtr_TisUInt64_t8F12534CC8FC4B5860F2A2CD1EE79D322E7A41AF_m44EAE568720002EAD1F4ECE1CBA62E756FB05AFA(L_4, NativeArrayUnsafeUtility_GetUnsafeReadOnlyPtr_TisUInt64_t8F12534CC8FC4B5860F2A2CD1EE79D322E7A41AF_m44EAE568720002EAD1F4ECE1CBA62E756FB05AFA_RuntimeMethod_var);
+				int32_t L_6;
+				L_6 = IL2CPP_NATIVEARRAY_GET_LENGTH(((&V_0))->___m_Length);
+				SaveOptions_tF36AB43DCE88CE295BFF83811A0DA1573B5FE5F7 L_7 = ___1_saveOptions;
+				int32_t L_8 = L_7.___Storage;
+				int32_t L_9;
+				L_9 = OVRExtensions_ToSpaceStorageLocation_mFF7C8770305D5CFCCB62FB78319A81CEFFF6926C(L_8, NULL);
+				il2cpp_codegen_runtime_class_init_inline(OVRAnchor_tC6603E0C1628ACAA50D8CCDCC267BFD246F5A061_il2cpp_TypeInfo_var);
+				int32_t L_10;
+				L_10 = OVRAnchor_SaveSpaceList_m355A74F88999E0BF0EC4ADE7B923CB659457EA93((uint64_t*)L_5, L_6, L_9, (&V_2), NULL);
+				V_1 = L_10;
+				int32_t L_11 = V_1;
 				il2cpp_codegen_runtime_class_init_inline(OVRPlugin_t0BF53CAD10A7503BB132A303469F2E0A639E696B_il2cpp_TypeInfo_var);
-				int32_t L_8;
-				L_8 = OVRPlugin_SaveSpaceList_m7C64FA741045A22005534AD460C9707855784D57(L_4, L_7, (&V_2), NULL);
-				V_1 = L_8;
-				int32_t L_9 = V_1;
-				bool L_10;
-				L_10 = OVRPlugin_IsSuccess_mEE88CFE2FC1D7DF1AE2BE4002D086A28D5244D68(L_9, NULL);
-				if (!L_10)
+				bool L_12;
+				L_12 = OVRPlugin_IsSuccess_mEE88CFE2FC1D7DF1AE2BE4002D086A28D5244D68(L_11, NULL);
+				if (!L_12)
 				{
-					goto IL_005c_1;
+					goto IL_0068_1;
 				}
 			}
 			{
 				il2cpp_codegen_runtime_class_init_inline(OVRSpatialAnchor_t934BFAE22D42E703A59DD025972C1FBF22381874_il2cpp_TypeInfo_var);
-				Dictionary_2_t23FF393E49E2296FCA70BAE140470B03778A0D33* L_11 = ((OVRSpatialAnchor_t934BFAE22D42E703A59DD025972C1FBF22381874_StaticFields*)il2cpp_codegen_static_fields_for(OVRSpatialAnchor_t934BFAE22D42E703A59DD025972C1FBF22381874_il2cpp_TypeInfo_var))->___MultiAnchorCompletionDelegates;
-				uint64_t L_12 = V_2;
+				Dictionary_2_t23FF393E49E2296FCA70BAE140470B03778A0D33* L_13 = ((OVRSpatialAnchor_t934BFAE22D42E703A59DD025972C1FBF22381874_StaticFields*)il2cpp_codegen_static_fields_for(OVRSpatialAnchor_t934BFAE22D42E703A59DD025972C1FBF22381874_il2cpp_TypeInfo_var))->___MultiAnchorCompletionDelegates;
+				uint64_t L_14 = V_2;
 				il2cpp_codegen_initobj((&V_3), sizeof(MultiAnchorDelegatePair_t549B7EC3028ED8DECFCC7801928095FCDD946E10));
-				RuntimeObject* L_13 = ___0_anchors;
-				List_1_t273413C8B654D2B591BCAA657421FF6CFCB3C56B* L_14;
-				L_14 = OVRSpatialAnchor_CopyAnchorListIntoListFromPool_m54E4A6B582FA7EB08C799813A73B37D29993FABE(L_13, NULL);
-				(&V_3)->___Anchors = L_14;
-				Il2CppCodeGenWriteBarrier((void**)(&(&V_3)->___Anchors), (void*)L_14);
-				Action_2_t74FE43E44FDC5FD99B14BCA58991B9C0572303ED* L_15 = ___2_onComplete;
-				(&V_3)->___Delegate = L_15;
-				Il2CppCodeGenWriteBarrier((void**)(&(&V_3)->___Delegate), (void*)L_15);
-				MultiAnchorDelegatePair_t549B7EC3028ED8DECFCC7801928095FCDD946E10 L_16 = V_3;
-				NullCheck(L_11);
-				Dictionary_2_set_Item_m8578BC82910E7B32F9712571A7E547AC9F6CA44A(L_11, L_12, L_16, Dictionary_2_set_Item_m8578BC82910E7B32F9712571A7E547AC9F6CA44A_RuntimeMethod_var);
-				goto IL_0079;
+				RuntimeObject* L_15 = ___0_anchors;
+				List_1_t273413C8B654D2B591BCAA657421FF6CFCB3C56B* L_16;
+				L_16 = OVRSpatialAnchor_CopyAnchorListIntoListFromPool_m54E4A6B582FA7EB08C799813A73B37D29993FABE(L_15, NULL);
+				(&V_3)->___Anchors = L_16;
+				Il2CppCodeGenWriteBarrier((void**)(&(&V_3)->___Anchors), (void*)L_16);
+				Action_2_t74FE43E44FDC5FD99B14BCA58991B9C0572303ED* L_17 = ___2_onComplete;
+				(&V_3)->___Delegate = L_17;
+				Il2CppCodeGenWriteBarrier((void**)(&(&V_3)->___Delegate), (void*)L_17);
+				MultiAnchorDelegatePair_t549B7EC3028ED8DECFCC7801928095FCDD946E10 L_18 = V_3;
+				NullCheck(L_13);
+				Dictionary_2_set_Item_m8578BC82910E7B32F9712571A7E547AC9F6CA44A(L_13, L_14, L_18, Dictionary_2_set_Item_m8578BC82910E7B32F9712571A7E547AC9F6CA44A_RuntimeMethod_var);
+				goto IL_0085;
 			}
 
-IL_005c_1:
+IL_0068_1:
 			{
-				Action_2_t74FE43E44FDC5FD99B14BCA58991B9C0572303ED* L_17 = ___2_onComplete;
-				if (L_17)
+				Action_2_t74FE43E44FDC5FD99B14BCA58991B9C0572303ED* L_19 = ___2_onComplete;
+				if (L_19)
 				{
-					goto IL_0061_1;
+					goto IL_006d_1;
 				}
 			}
 			{
-				goto IL_0079;
+				goto IL_0085;
 			}
 
-IL_0061_1:
+IL_006d_1:
 			{
-				Action_2_t74FE43E44FDC5FD99B14BCA58991B9C0572303ED* L_18 = ___2_onComplete;
-				RuntimeObject* L_19 = ___0_anchors;
-				int32_t L_20 = V_1;
-				NullCheck(L_18);
-				Action_2_Invoke_mE6C45AFF3AF60568FF7CEA7FCBE78280828775BE_inline(L_18, L_19, L_20, NULL);
-				goto IL_0079;
+				Action_2_t74FE43E44FDC5FD99B14BCA58991B9C0572303ED* L_20 = ___2_onComplete;
+				RuntimeObject* L_21 = ___0_anchors;
+				int32_t L_22 = V_1;
+				NullCheck(L_20);
+				Action_2_Invoke_mE6C45AFF3AF60568FF7CEA7FCBE78280828775BE_inline(L_20, L_21, L_22, NULL);
+				goto IL_0085;
 			}
 		}
 		catch(Il2CppExceptionWrapper& e)
@@ -13669,7 +13870,7 @@ IL_0061_1:
 		}
 	}
 
-IL_0079:
+IL_0085:
 	{
 		return;
 	}
@@ -14999,7 +15200,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MarkerPoint__ctor_mC5FFE9FAF9B6791C3628B
 		String_t* L_1 = ___0_name;
 		NullCheck(L_0);
 		bool L_2;
-		L_2 = VirtualFuncInvoker2< bool, String_t*, int32_t* >::Invoke(8, L_0, L_1, (&V_0));
+		L_2 = VirtualFuncInvoker2< bool, String_t*, int32_t* >::Invoke(11, L_0, L_1, (&V_0));
 		int32_t L_3 = V_0;
 		__this->___U3CNameHandleU3Ek__BackingField = L_3;
 		return;
@@ -15028,7 +15229,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MarkerPoint_Dispose_mFF596C8BB6FE0008919
 		L_1 = MarkerPoint_get_NameHandle_mDCE30894C18835C0ECA76124A12DCFEDA460FEBC_inline(__this, NULL);
 		NullCheck(L_0);
 		bool L_2;
-		L_2 = VirtualFuncInvoker1< bool, int32_t >::Invoke(9, L_0, L_1);
+		L_2 = VirtualFuncInvoker1< bool, int32_t >::Invoke(12, L_0, L_1);
 		return;
 	}
 }
@@ -15047,6 +15248,101 @@ IL2CPP_EXTERN_C  void MarkerPoint_Dispose_mFF596C8BB6FE00089190AA25ECC2E6C9B39EF
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TelemetryClient_MarkerAnnotation_mBD7EC1325A16BF996AAC5400820633F215176669 (TelemetryClient_t9CE1E8181AB1E214F15A8AE5ED3356FF9B895F0C* __this, int32_t ___0_markerId, String_t* ___1_annotationKey, bool ___2_annotationValue, int32_t ___3_instanceKey, const RuntimeMethod* method) 
+{
+	{
+		int32_t L_0 = ___0_markerId;
+		String_t* L_1 = ___1_annotationKey;
+		bool L_2 = ___2_annotationValue;
+		Variant_t1C24D2F331888502CEE4F0CF1646348E0261E25B L_3;
+		L_3 = Variant_From_m59443563F9FC97D8B2E745DD9251A97DF516C422(L_2, NULL);
+		int32_t L_4 = ___3_instanceKey;
+		VirtualActionInvoker4< int32_t, String_t*, Variant_t1C24D2F331888502CEE4F0CF1646348E0261E25B, int32_t >::Invoke(8, __this, L_0, L_1, L_3, L_4);
+		return;
+	}
+}
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TelemetryClient_MarkerAnnotation_m48444F1D50C6A075A2492C21CB8F2DEDAC47E17A (TelemetryClient_t9CE1E8181AB1E214F15A8AE5ED3356FF9B895F0C* __this, int32_t ___0_markerId, String_t* ___1_annotationKey, int64_t ___2_annotationValue, int32_t ___3_instanceKey, const RuntimeMethod* method) 
+{
+	{
+		int32_t L_0 = ___0_markerId;
+		String_t* L_1 = ___1_annotationKey;
+		int64_t L_2 = ___2_annotationValue;
+		Variant_t1C24D2F331888502CEE4F0CF1646348E0261E25B L_3;
+		L_3 = Variant_From_m966A3EFB5E5C6681370730E296597D3A264B0A71(L_2, NULL);
+		int32_t L_4 = ___3_instanceKey;
+		VirtualActionInvoker4< int32_t, String_t*, Variant_t1C24D2F331888502CEE4F0CF1646348E0261E25B, int32_t >::Invoke(8, __this, L_0, L_1, L_3, L_4);
+		return;
+	}
+}
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TelemetryClient_MarkerAnnotation_mC7BF4638F616B1601435C9F9120FB714CDE9D1E1 (TelemetryClient_t9CE1E8181AB1E214F15A8AE5ED3356FF9B895F0C* __this, int32_t ___0_markerId, String_t* ___1_annotationKey, double ___2_annotationValue, int32_t ___3_instanceKey, const RuntimeMethod* method) 
+{
+	{
+		int32_t L_0 = ___0_markerId;
+		String_t* L_1 = ___1_annotationKey;
+		double L_2 = ___2_annotationValue;
+		Variant_t1C24D2F331888502CEE4F0CF1646348E0261E25B L_3;
+		L_3 = Variant_From_m94C993CD0AF7A257D140E838D9D81EAE935C4AFE(L_2, NULL);
+		int32_t L_4 = ___3_instanceKey;
+		VirtualActionInvoker4< int32_t, String_t*, Variant_t1C24D2F331888502CEE4F0CF1646348E0261E25B, int32_t >::Invoke(8, __this, L_0, L_1, L_3, L_4);
+		return;
+	}
+}
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TelemetryClient_MarkerAnnotation_m0845DF6D0933C7387B3A68EB6D7CEAD2F0A19D54 (TelemetryClient_t9CE1E8181AB1E214F15A8AE5ED3356FF9B895F0C* __this, int32_t ___0_markerId, String_t* ___1_annotationKey, uint8_t** ___2_annotationValues, int32_t ___3_count, int32_t ___4_instanceKey, const RuntimeMethod* method) 
+{
+	{
+		int32_t L_0 = ___0_markerId;
+		String_t* L_1 = ___1_annotationKey;
+		uint8_t** L_2 = ___2_annotationValues;
+		int32_t L_3 = ___3_count;
+		Variant_t1C24D2F331888502CEE4F0CF1646348E0261E25B L_4;
+		L_4 = Variant_From_mE5B70E43700809A3A371B578AF2186B761A8949A(L_2, L_3, NULL);
+		int32_t L_5 = ___4_instanceKey;
+		VirtualActionInvoker4< int32_t, String_t*, Variant_t1C24D2F331888502CEE4F0CF1646348E0261E25B, int32_t >::Invoke(8, __this, L_0, L_1, L_4, L_5);
+		return;
+	}
+}
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TelemetryClient_MarkerAnnotation_mBB9F92F64179B1AD96E44C50184979EBA74E747E (TelemetryClient_t9CE1E8181AB1E214F15A8AE5ED3356FF9B895F0C* __this, int32_t ___0_markerId, String_t* ___1_annotationKey, int64_t* ___2_annotationValues, int32_t ___3_count, int32_t ___4_instanceKey, const RuntimeMethod* method) 
+{
+	{
+		int32_t L_0 = ___0_markerId;
+		String_t* L_1 = ___1_annotationKey;
+		int64_t* L_2 = ___2_annotationValues;
+		int32_t L_3 = ___3_count;
+		Variant_t1C24D2F331888502CEE4F0CF1646348E0261E25B L_4;
+		L_4 = Variant_From_mF102B8DB58F225CEF4188D8D5FD57424FCE38668(L_2, L_3, NULL);
+		int32_t L_5 = ___4_instanceKey;
+		VirtualActionInvoker4< int32_t, String_t*, Variant_t1C24D2F331888502CEE4F0CF1646348E0261E25B, int32_t >::Invoke(8, __this, L_0, L_1, L_4, L_5);
+		return;
+	}
+}
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TelemetryClient_MarkerAnnotation_m69EDBAB42A8DBAEEA36AA16AE804194D055C8DC9 (TelemetryClient_t9CE1E8181AB1E214F15A8AE5ED3356FF9B895F0C* __this, int32_t ___0_markerId, String_t* ___1_annotationKey, double* ___2_annotationValues, int32_t ___3_count, int32_t ___4_instanceKey, const RuntimeMethod* method) 
+{
+	{
+		int32_t L_0 = ___0_markerId;
+		String_t* L_1 = ___1_annotationKey;
+		double* L_2 = ___2_annotationValues;
+		int32_t L_3 = ___3_count;
+		Variant_t1C24D2F331888502CEE4F0CF1646348E0261E25B L_4;
+		L_4 = Variant_From_m1E2F43D7D7F982C66D61AF6410251001A89FA87C(L_2, L_3, NULL);
+		int32_t L_5 = ___4_instanceKey;
+		VirtualActionInvoker4< int32_t, String_t*, Variant_t1C24D2F331888502CEE4F0CF1646348E0261E25B, int32_t >::Invoke(8, __this, L_0, L_1, L_4, L_5);
+		return;
+	}
+}
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TelemetryClient_MarkerAnnotation_mAC65B2AF8A73B53558C2DC400F45C1A16AD81C0D (TelemetryClient_t9CE1E8181AB1E214F15A8AE5ED3356FF9B895F0C* __this, int32_t ___0_markerId, String_t* ___1_annotationKey, int32_t* ___2_annotationValues, int32_t ___3_count, int32_t ___4_instanceKey, const RuntimeMethod* method) 
+{
+	{
+		int32_t L_0 = ___0_markerId;
+		String_t* L_1 = ___1_annotationKey;
+		int32_t* L_2 = ___2_annotationValues;
+		int32_t L_3 = ___3_count;
+		Variant_t1C24D2F331888502CEE4F0CF1646348E0261E25B L_4;
+		L_4 = Variant_From_mF05BFB9DF644D23E170B0D5B2D49F5396234A523(L_2, L_3, NULL);
+		int32_t L_5 = ___4_instanceKey;
+		VirtualActionInvoker4< int32_t, String_t*, Variant_t1C24D2F331888502CEE4F0CF1646348E0261E25B, int32_t >::Invoke(8, __this, L_0, L_1, L_4, L_5);
+		return;
+	}
+}
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TelemetryClient__ctor_mDA491D1124513679C26983C11866D7A1D057778B (TelemetryClient_t9CE1E8181AB1E214F15A8AE5ED3356FF9B895F0C* __this, const RuntimeMethod* method) 
 {
 	{
@@ -15069,6 +15365,24 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void NullTelemetryClient_MarkerStart_m5B924FF
 	}
 }
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void NullTelemetryClient_MarkerPointCached_mB8A71686272810373B98A7A274F690565F2ED64D (NullTelemetryClient_t8FA24F68F17C5E8A96E2F6C41FFB4AED81ED6290* __this, int32_t ___0_markerId, int32_t ___1_nameHandle, int32_t ___2_instanceKey, int64_t ___3_timestampMs, const RuntimeMethod* method) 
+{
+	{
+		return;
+	}
+}
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void NullTelemetryClient_MarkerPoint_mAEA8BB1D5B0924A96C73E95F816BD828D22DC7C7 (NullTelemetryClient_t8FA24F68F17C5E8A96E2F6C41FFB4AED81ED6290* __this, int32_t ___0_markerId, String_t* ___1_name, int32_t ___2_instanceKey, int64_t ___3_timestampMs, const RuntimeMethod* method) 
+{
+	{
+		return;
+	}
+}
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void NullTelemetryClient_MarkerPoint_m2D4C8973F756AA06CDB1F64473EF75B0C91A299E (NullTelemetryClient_t8FA24F68F17C5E8A96E2F6C41FFB4AED81ED6290* __this, int32_t ___0_markerId, String_t* ___1_name, Annotation_tD997D580E0E524DEA7DB2A481FB724AFD5009AF1* ___2_annotations, int32_t ___3_annotationCount, int32_t ___4_instanceKey, int64_t ___5_timestampMs, const RuntimeMethod* method) 
+{
+	{
+		return;
+	}
+}
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void NullTelemetryClient_MarkerAnnotation_m67E3F0F1105AD495E4D0C659394B9E9B55D6CE34 (NullTelemetryClient_t8FA24F68F17C5E8A96E2F6C41FFB4AED81ED6290* __this, int32_t ___0_markerId, String_t* ___1_key, Variant_t1C24D2F331888502CEE4F0CF1646348E0261E25B ___2_value, int32_t ___3_instanceKey, const RuntimeMethod* method) 
 {
 	{
 		return;
@@ -15136,6 +15450,32 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void QPLTelemetryClient_MarkerPointCached_mF6
 		return;
 	}
 }
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void QPLTelemetryClient_MarkerPoint_m1829ADA6892F836F0D7021429507D5E09B2F7705 (QPLTelemetryClient_tFB0170F6845BE12C4C339102DE0ABBDF952432F2* __this, int32_t ___0_markerId, String_t* ___1_name, int32_t ___2_instanceKey, int64_t ___3_timestampMs, const RuntimeMethod* method) 
+{
+	{
+		int32_t L_0 = ___0_markerId;
+		String_t* L_1 = ___1_name;
+		int32_t L_2 = ___2_instanceKey;
+		int64_t L_3 = ___3_timestampMs;
+		int32_t L_4;
+		L_4 = Qpl_MarkerPoint_mCD163E74755FA459E36727386E7467B0E85707D0(L_0, L_1, L_2, L_3, NULL);
+		return;
+	}
+}
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void QPLTelemetryClient_MarkerPoint_m25C68732BC79CDE6ABD6CEEC73F735B224FCBD2B (QPLTelemetryClient_tFB0170F6845BE12C4C339102DE0ABBDF952432F2* __this, int32_t ___0_markerId, String_t* ___1_name, Annotation_tD997D580E0E524DEA7DB2A481FB724AFD5009AF1* ___2_annotations, int32_t ___3_annotationCount, int32_t ___4_instanceKey, int64_t ___5_timestampMs, const RuntimeMethod* method) 
+{
+	{
+		int32_t L_0 = ___0_markerId;
+		String_t* L_1 = ___1_name;
+		Annotation_tD997D580E0E524DEA7DB2A481FB724AFD5009AF1* L_2 = ___2_annotations;
+		int32_t L_3 = ___3_annotationCount;
+		int32_t L_4 = ___4_instanceKey;
+		int64_t L_5 = ___5_timestampMs;
+		int32_t L_6;
+		L_6 = Qpl_MarkerPoint_m9B85544CC91084672C4F14E8C014688E2954152B(L_0, L_1, L_2, L_3, L_4, L_5, NULL);
+		return;
+	}
+}
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void QPLTelemetryClient_MarkerAnnotation_m9D560F7D5BEB3D35F8805F3533A7C1BB6909BAB5 (QPLTelemetryClient_tFB0170F6845BE12C4C339102DE0ABBDF952432F2* __this, int32_t ___0_markerId, String_t* ___1_annotationKey, String_t* ___2_annotationValue, int32_t ___3_instanceKey, const RuntimeMethod* method) 
 {
 	{
@@ -15144,6 +15484,18 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void QPLTelemetryClient_MarkerAnnotation_m9D5
 		String_t* L_2 = ___2_annotationValue;
 		int32_t L_3 = ___3_instanceKey;
 		Qpl_MarkerAnnotation_mF27117DAF4F9C05F6981389CB9A7BF85241D4377(L_0, L_1, L_2, L_3, NULL);
+		return;
+	}
+}
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void QPLTelemetryClient_MarkerAnnotation_m1022D4642B9DE48A94C92480DD5F5DC134EB71C9 (QPLTelemetryClient_tFB0170F6845BE12C4C339102DE0ABBDF952432F2* __this, int32_t ___0_markerId, String_t* ___1_key, Variant_t1C24D2F331888502CEE4F0CF1646348E0261E25B ___2_value, int32_t ___3_instanceKey, const RuntimeMethod* method) 
+{
+	{
+		int32_t L_0 = ___0_markerId;
+		String_t* L_1 = ___1_key;
+		Variant_t1C24D2F331888502CEE4F0CF1646348E0261E25B L_2 = ___2_value;
+		int32_t L_3 = ___3_instanceKey;
+		int32_t L_4;
+		L_4 = Qpl_MarkerAnnotation_m0A8DE8512A349CEADBECC1C4B6D2224FE7FE4810(L_0, L_1, L_2, L_3, NULL);
 		return;
 	}
 }
@@ -15608,7 +15960,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR OVRTelemetryMarker_t9BCBB9BBB77B5411E3F71019A
 		int32_t L_4;
 		L_4 = OVRTelemetryMarker_get_InstanceKey_m8BE3D5A45BC7A2A74756AE5CCF7923C0CD942DB8_inline(__this, NULL);
 		NullCheck(L_0);
-		VirtualActionInvoker4< int32_t, String_t*, String_t*, int32_t >::Invoke(6, L_0, L_1, L_2, L_3, L_4);
+		VirtualActionInvoker4< int32_t, String_t*, String_t*, int32_t >::Invoke(9, L_0, L_1, L_2, L_3, L_4);
 		OVRTelemetryMarker_t9BCBB9BBB77B5411E3F71019A5F880C1A16E60F9 L_5 = (*(OVRTelemetryMarker_t9BCBB9BBB77B5411E3F71019A5F880C1A16E60F9*)__this);
 		return L_5;
 	}
@@ -15620,6 +15972,185 @@ IL2CPP_EXTERN_C  OVRTelemetryMarker_t9BCBB9BBB77B5411E3F71019A5F880C1A16E60F9 OV
 	_thisAdjusted = reinterpret_cast<OVRTelemetryMarker_t9BCBB9BBB77B5411E3F71019A5F880C1A16E60F9*>(__this + _offset);
 	OVRTelemetryMarker_t9BCBB9BBB77B5411E3F71019A5F880C1A16E60F9 _returnValue;
 	_returnValue = OVRTelemetryMarker_AddAnnotation_mE6F17914B4251FF7B6494169D68E9D5FEBAA927D(_thisAdjusted, ___0_annotationKey, ___1_annotationValue, method);
+	return _returnValue;
+}
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR OVRTelemetryMarker_t9BCBB9BBB77B5411E3F71019A5F880C1A16E60F9 OVRTelemetryMarker_AddAnnotation_m1D191919DD202C611BC1B8277EE6CE5B5D33A347 (OVRTelemetryMarker_t9BCBB9BBB77B5411E3F71019A5F880C1A16E60F9* __this, String_t* ___0_annotationKey, bool ___1_annotationValue, const RuntimeMethod* method) 
+{
+	{
+		TelemetryClient_t9CE1E8181AB1E214F15A8AE5ED3356FF9B895F0C* L_0 = __this->____client;
+		int32_t L_1;
+		L_1 = OVRTelemetryMarker_get_MarkerId_m3D5201443D16D96E1B80CDBAD255948F88E5D1A2_inline(__this, NULL);
+		String_t* L_2 = ___0_annotationKey;
+		bool L_3 = ___1_annotationValue;
+		int32_t L_4;
+		L_4 = OVRTelemetryMarker_get_InstanceKey_m8BE3D5A45BC7A2A74756AE5CCF7923C0CD942DB8_inline(__this, NULL);
+		NullCheck(L_0);
+		TelemetryClient_MarkerAnnotation_mBD7EC1325A16BF996AAC5400820633F215176669(L_0, L_1, L_2, L_3, L_4, NULL);
+		OVRTelemetryMarker_t9BCBB9BBB77B5411E3F71019A5F880C1A16E60F9 L_5 = (*(OVRTelemetryMarker_t9BCBB9BBB77B5411E3F71019A5F880C1A16E60F9*)__this);
+		return L_5;
+	}
+}
+IL2CPP_EXTERN_C  OVRTelemetryMarker_t9BCBB9BBB77B5411E3F71019A5F880C1A16E60F9 OVRTelemetryMarker_AddAnnotation_m1D191919DD202C611BC1B8277EE6CE5B5D33A347_AdjustorThunk (RuntimeObject* __this, String_t* ___0_annotationKey, bool ___1_annotationValue, const RuntimeMethod* method)
+{
+	OVRTelemetryMarker_t9BCBB9BBB77B5411E3F71019A5F880C1A16E60F9* _thisAdjusted;
+	int32_t _offset = 1;
+	_thisAdjusted = reinterpret_cast<OVRTelemetryMarker_t9BCBB9BBB77B5411E3F71019A5F880C1A16E60F9*>(__this + _offset);
+	OVRTelemetryMarker_t9BCBB9BBB77B5411E3F71019A5F880C1A16E60F9 _returnValue;
+	_returnValue = OVRTelemetryMarker_AddAnnotation_m1D191919DD202C611BC1B8277EE6CE5B5D33A347(_thisAdjusted, ___0_annotationKey, ___1_annotationValue, method);
+	return _returnValue;
+}
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR OVRTelemetryMarker_t9BCBB9BBB77B5411E3F71019A5F880C1A16E60F9 OVRTelemetryMarker_AddAnnotation_m022CC9192828D288D8129F069DF3DD986A17D8DE (OVRTelemetryMarker_t9BCBB9BBB77B5411E3F71019A5F880C1A16E60F9* __this, String_t* ___0_annotationKey, double ___1_annotationValue, const RuntimeMethod* method) 
+{
+	{
+		TelemetryClient_t9CE1E8181AB1E214F15A8AE5ED3356FF9B895F0C* L_0 = __this->____client;
+		int32_t L_1;
+		L_1 = OVRTelemetryMarker_get_MarkerId_m3D5201443D16D96E1B80CDBAD255948F88E5D1A2_inline(__this, NULL);
+		String_t* L_2 = ___0_annotationKey;
+		double L_3 = ___1_annotationValue;
+		int32_t L_4;
+		L_4 = OVRTelemetryMarker_get_InstanceKey_m8BE3D5A45BC7A2A74756AE5CCF7923C0CD942DB8_inline(__this, NULL);
+		NullCheck(L_0);
+		TelemetryClient_MarkerAnnotation_mC7BF4638F616B1601435C9F9120FB714CDE9D1E1(L_0, L_1, L_2, L_3, L_4, NULL);
+		OVRTelemetryMarker_t9BCBB9BBB77B5411E3F71019A5F880C1A16E60F9 L_5 = (*(OVRTelemetryMarker_t9BCBB9BBB77B5411E3F71019A5F880C1A16E60F9*)__this);
+		return L_5;
+	}
+}
+IL2CPP_EXTERN_C  OVRTelemetryMarker_t9BCBB9BBB77B5411E3F71019A5F880C1A16E60F9 OVRTelemetryMarker_AddAnnotation_m022CC9192828D288D8129F069DF3DD986A17D8DE_AdjustorThunk (RuntimeObject* __this, String_t* ___0_annotationKey, double ___1_annotationValue, const RuntimeMethod* method)
+{
+	OVRTelemetryMarker_t9BCBB9BBB77B5411E3F71019A5F880C1A16E60F9* _thisAdjusted;
+	int32_t _offset = 1;
+	_thisAdjusted = reinterpret_cast<OVRTelemetryMarker_t9BCBB9BBB77B5411E3F71019A5F880C1A16E60F9*>(__this + _offset);
+	OVRTelemetryMarker_t9BCBB9BBB77B5411E3F71019A5F880C1A16E60F9 _returnValue;
+	_returnValue = OVRTelemetryMarker_AddAnnotation_m022CC9192828D288D8129F069DF3DD986A17D8DE(_thisAdjusted, ___0_annotationKey, ___1_annotationValue, method);
+	return _returnValue;
+}
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR OVRTelemetryMarker_t9BCBB9BBB77B5411E3F71019A5F880C1A16E60F9 OVRTelemetryMarker_AddAnnotation_m168F2976545293D401AADDFDB0E03D9944AF2F39 (OVRTelemetryMarker_t9BCBB9BBB77B5411E3F71019A5F880C1A16E60F9* __this, String_t* ___0_annotationKey, int64_t ___1_annotationValue, const RuntimeMethod* method) 
+{
+	{
+		TelemetryClient_t9CE1E8181AB1E214F15A8AE5ED3356FF9B895F0C* L_0 = __this->____client;
+		int32_t L_1;
+		L_1 = OVRTelemetryMarker_get_MarkerId_m3D5201443D16D96E1B80CDBAD255948F88E5D1A2_inline(__this, NULL);
+		String_t* L_2 = ___0_annotationKey;
+		int64_t L_3 = ___1_annotationValue;
+		int32_t L_4;
+		L_4 = OVRTelemetryMarker_get_InstanceKey_m8BE3D5A45BC7A2A74756AE5CCF7923C0CD942DB8_inline(__this, NULL);
+		NullCheck(L_0);
+		TelemetryClient_MarkerAnnotation_m48444F1D50C6A075A2492C21CB8F2DEDAC47E17A(L_0, L_1, L_2, L_3, L_4, NULL);
+		OVRTelemetryMarker_t9BCBB9BBB77B5411E3F71019A5F880C1A16E60F9 L_5 = (*(OVRTelemetryMarker_t9BCBB9BBB77B5411E3F71019A5F880C1A16E60F9*)__this);
+		return L_5;
+	}
+}
+IL2CPP_EXTERN_C  OVRTelemetryMarker_t9BCBB9BBB77B5411E3F71019A5F880C1A16E60F9 OVRTelemetryMarker_AddAnnotation_m168F2976545293D401AADDFDB0E03D9944AF2F39_AdjustorThunk (RuntimeObject* __this, String_t* ___0_annotationKey, int64_t ___1_annotationValue, const RuntimeMethod* method)
+{
+	OVRTelemetryMarker_t9BCBB9BBB77B5411E3F71019A5F880C1A16E60F9* _thisAdjusted;
+	int32_t _offset = 1;
+	_thisAdjusted = reinterpret_cast<OVRTelemetryMarker_t9BCBB9BBB77B5411E3F71019A5F880C1A16E60F9*>(__this + _offset);
+	OVRTelemetryMarker_t9BCBB9BBB77B5411E3F71019A5F880C1A16E60F9 _returnValue;
+	_returnValue = OVRTelemetryMarker_AddAnnotation_m168F2976545293D401AADDFDB0E03D9944AF2F39(_thisAdjusted, ___0_annotationKey, ___1_annotationValue, method);
+	return _returnValue;
+}
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR OVRTelemetryMarker_t9BCBB9BBB77B5411E3F71019A5F880C1A16E60F9 OVRTelemetryMarker_AddAnnotation_m35C2F2722A9C668387D9338313F071E390D5C385 (OVRTelemetryMarker_t9BCBB9BBB77B5411E3F71019A5F880C1A16E60F9* __this, String_t* ___0_annotationKey, uint8_t** ___1_annotationValues, int32_t ___2_count, const RuntimeMethod* method) 
+{
+	{
+		TelemetryClient_t9CE1E8181AB1E214F15A8AE5ED3356FF9B895F0C* L_0 = __this->____client;
+		int32_t L_1;
+		L_1 = OVRTelemetryMarker_get_MarkerId_m3D5201443D16D96E1B80CDBAD255948F88E5D1A2_inline(__this, NULL);
+		String_t* L_2 = ___0_annotationKey;
+		uint8_t** L_3 = ___1_annotationValues;
+		int32_t L_4 = ___2_count;
+		int32_t L_5;
+		L_5 = OVRTelemetryMarker_get_InstanceKey_m8BE3D5A45BC7A2A74756AE5CCF7923C0CD942DB8_inline(__this, NULL);
+		NullCheck(L_0);
+		TelemetryClient_MarkerAnnotation_m0845DF6D0933C7387B3A68EB6D7CEAD2F0A19D54(L_0, L_1, L_2, L_3, L_4, L_5, NULL);
+		OVRTelemetryMarker_t9BCBB9BBB77B5411E3F71019A5F880C1A16E60F9 L_6 = (*(OVRTelemetryMarker_t9BCBB9BBB77B5411E3F71019A5F880C1A16E60F9*)__this);
+		return L_6;
+	}
+}
+IL2CPP_EXTERN_C  OVRTelemetryMarker_t9BCBB9BBB77B5411E3F71019A5F880C1A16E60F9 OVRTelemetryMarker_AddAnnotation_m35C2F2722A9C668387D9338313F071E390D5C385_AdjustorThunk (RuntimeObject* __this, String_t* ___0_annotationKey, uint8_t** ___1_annotationValues, int32_t ___2_count, const RuntimeMethod* method)
+{
+	OVRTelemetryMarker_t9BCBB9BBB77B5411E3F71019A5F880C1A16E60F9* _thisAdjusted;
+	int32_t _offset = 1;
+	_thisAdjusted = reinterpret_cast<OVRTelemetryMarker_t9BCBB9BBB77B5411E3F71019A5F880C1A16E60F9*>(__this + _offset);
+	OVRTelemetryMarker_t9BCBB9BBB77B5411E3F71019A5F880C1A16E60F9 _returnValue;
+	_returnValue = OVRTelemetryMarker_AddAnnotation_m35C2F2722A9C668387D9338313F071E390D5C385(_thisAdjusted, ___0_annotationKey, ___1_annotationValues, ___2_count, method);
+	return _returnValue;
+}
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR OVRTelemetryMarker_t9BCBB9BBB77B5411E3F71019A5F880C1A16E60F9 OVRTelemetryMarker_AddAnnotation_mF4092948CDA9ACBD39B3E7AEDB5D75103947EFA3 (OVRTelemetryMarker_t9BCBB9BBB77B5411E3F71019A5F880C1A16E60F9* __this, String_t* ___0_annotationKey, int64_t* ___1_annotationValues, int32_t ___2_count, const RuntimeMethod* method) 
+{
+	{
+		TelemetryClient_t9CE1E8181AB1E214F15A8AE5ED3356FF9B895F0C* L_0 = __this->____client;
+		int32_t L_1;
+		L_1 = OVRTelemetryMarker_get_MarkerId_m3D5201443D16D96E1B80CDBAD255948F88E5D1A2_inline(__this, NULL);
+		String_t* L_2 = ___0_annotationKey;
+		int64_t* L_3 = ___1_annotationValues;
+		int32_t L_4 = ___2_count;
+		int32_t L_5;
+		L_5 = OVRTelemetryMarker_get_InstanceKey_m8BE3D5A45BC7A2A74756AE5CCF7923C0CD942DB8_inline(__this, NULL);
+		NullCheck(L_0);
+		TelemetryClient_MarkerAnnotation_mBB9F92F64179B1AD96E44C50184979EBA74E747E(L_0, L_1, L_2, L_3, L_4, L_5, NULL);
+		OVRTelemetryMarker_t9BCBB9BBB77B5411E3F71019A5F880C1A16E60F9 L_6 = (*(OVRTelemetryMarker_t9BCBB9BBB77B5411E3F71019A5F880C1A16E60F9*)__this);
+		return L_6;
+	}
+}
+IL2CPP_EXTERN_C  OVRTelemetryMarker_t9BCBB9BBB77B5411E3F71019A5F880C1A16E60F9 OVRTelemetryMarker_AddAnnotation_mF4092948CDA9ACBD39B3E7AEDB5D75103947EFA3_AdjustorThunk (RuntimeObject* __this, String_t* ___0_annotationKey, int64_t* ___1_annotationValues, int32_t ___2_count, const RuntimeMethod* method)
+{
+	OVRTelemetryMarker_t9BCBB9BBB77B5411E3F71019A5F880C1A16E60F9* _thisAdjusted;
+	int32_t _offset = 1;
+	_thisAdjusted = reinterpret_cast<OVRTelemetryMarker_t9BCBB9BBB77B5411E3F71019A5F880C1A16E60F9*>(__this + _offset);
+	OVRTelemetryMarker_t9BCBB9BBB77B5411E3F71019A5F880C1A16E60F9 _returnValue;
+	_returnValue = OVRTelemetryMarker_AddAnnotation_mF4092948CDA9ACBD39B3E7AEDB5D75103947EFA3(_thisAdjusted, ___0_annotationKey, ___1_annotationValues, ___2_count, method);
+	return _returnValue;
+}
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR OVRTelemetryMarker_t9BCBB9BBB77B5411E3F71019A5F880C1A16E60F9 OVRTelemetryMarker_AddAnnotation_m8C69AF3EC83FAE7E46AA9E3FCE1D209541807B1E (OVRTelemetryMarker_t9BCBB9BBB77B5411E3F71019A5F880C1A16E60F9* __this, String_t* ___0_annotationKey, double* ___1_annotationValues, int32_t ___2_count, const RuntimeMethod* method) 
+{
+	{
+		TelemetryClient_t9CE1E8181AB1E214F15A8AE5ED3356FF9B895F0C* L_0 = __this->____client;
+		int32_t L_1;
+		L_1 = OVRTelemetryMarker_get_MarkerId_m3D5201443D16D96E1B80CDBAD255948F88E5D1A2_inline(__this, NULL);
+		String_t* L_2 = ___0_annotationKey;
+		double* L_3 = ___1_annotationValues;
+		int32_t L_4 = ___2_count;
+		int32_t L_5;
+		L_5 = OVRTelemetryMarker_get_InstanceKey_m8BE3D5A45BC7A2A74756AE5CCF7923C0CD942DB8_inline(__this, NULL);
+		NullCheck(L_0);
+		TelemetryClient_MarkerAnnotation_m69EDBAB42A8DBAEEA36AA16AE804194D055C8DC9(L_0, L_1, L_2, L_3, L_4, L_5, NULL);
+		OVRTelemetryMarker_t9BCBB9BBB77B5411E3F71019A5F880C1A16E60F9 L_6 = (*(OVRTelemetryMarker_t9BCBB9BBB77B5411E3F71019A5F880C1A16E60F9*)__this);
+		return L_6;
+	}
+}
+IL2CPP_EXTERN_C  OVRTelemetryMarker_t9BCBB9BBB77B5411E3F71019A5F880C1A16E60F9 OVRTelemetryMarker_AddAnnotation_m8C69AF3EC83FAE7E46AA9E3FCE1D209541807B1E_AdjustorThunk (RuntimeObject* __this, String_t* ___0_annotationKey, double* ___1_annotationValues, int32_t ___2_count, const RuntimeMethod* method)
+{
+	OVRTelemetryMarker_t9BCBB9BBB77B5411E3F71019A5F880C1A16E60F9* _thisAdjusted;
+	int32_t _offset = 1;
+	_thisAdjusted = reinterpret_cast<OVRTelemetryMarker_t9BCBB9BBB77B5411E3F71019A5F880C1A16E60F9*>(__this + _offset);
+	OVRTelemetryMarker_t9BCBB9BBB77B5411E3F71019A5F880C1A16E60F9 _returnValue;
+	_returnValue = OVRTelemetryMarker_AddAnnotation_m8C69AF3EC83FAE7E46AA9E3FCE1D209541807B1E(_thisAdjusted, ___0_annotationKey, ___1_annotationValues, ___2_count, method);
+	return _returnValue;
+}
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR OVRTelemetryMarker_t9BCBB9BBB77B5411E3F71019A5F880C1A16E60F9 OVRTelemetryMarker_AddAnnotation_m0455849C5302C5530B9DB448878FE93D134E2C8A (OVRTelemetryMarker_t9BCBB9BBB77B5411E3F71019A5F880C1A16E60F9* __this, String_t* ___0_annotationKey, int32_t* ___1_annotationValues, int32_t ___2_count, const RuntimeMethod* method) 
+{
+	{
+		TelemetryClient_t9CE1E8181AB1E214F15A8AE5ED3356FF9B895F0C* L_0 = __this->____client;
+		int32_t L_1;
+		L_1 = OVRTelemetryMarker_get_MarkerId_m3D5201443D16D96E1B80CDBAD255948F88E5D1A2_inline(__this, NULL);
+		String_t* L_2 = ___0_annotationKey;
+		int32_t* L_3 = ___1_annotationValues;
+		int32_t L_4 = ___2_count;
+		int32_t L_5;
+		L_5 = OVRTelemetryMarker_get_InstanceKey_m8BE3D5A45BC7A2A74756AE5CCF7923C0CD942DB8_inline(__this, NULL);
+		NullCheck(L_0);
+		TelemetryClient_MarkerAnnotation_mAC65B2AF8A73B53558C2DC400F45C1A16AD81C0D(L_0, L_1, L_2, L_3, L_4, L_5, NULL);
+		OVRTelemetryMarker_t9BCBB9BBB77B5411E3F71019A5F880C1A16E60F9 L_6 = (*(OVRTelemetryMarker_t9BCBB9BBB77B5411E3F71019A5F880C1A16E60F9*)__this);
+		return L_6;
+	}
+}
+IL2CPP_EXTERN_C  OVRTelemetryMarker_t9BCBB9BBB77B5411E3F71019A5F880C1A16E60F9 OVRTelemetryMarker_AddAnnotation_m0455849C5302C5530B9DB448878FE93D134E2C8A_AdjustorThunk (RuntimeObject* __this, String_t* ___0_annotationKey, int32_t* ___1_annotationValues, int32_t ___2_count, const RuntimeMethod* method)
+{
+	OVRTelemetryMarker_t9BCBB9BBB77B5411E3F71019A5F880C1A16E60F9* _thisAdjusted;
+	int32_t _offset = 1;
+	_thisAdjusted = reinterpret_cast<OVRTelemetryMarker_t9BCBB9BBB77B5411E3F71019A5F880C1A16E60F9*>(__this + _offset);
+	OVRTelemetryMarker_t9BCBB9BBB77B5411E3F71019A5F880C1A16E60F9 _returnValue;
+	_returnValue = OVRTelemetryMarker_AddAnnotation_m0455849C5302C5530B9DB448878FE93D134E2C8A(_thisAdjusted, ___0_annotationKey, ___1_annotationValues, ___2_count, method);
 	return _returnValue;
 }
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR OVRTelemetryMarker_t9BCBB9BBB77B5411E3F71019A5F880C1A16E60F9 OVRTelemetryMarker_AddAnnotationIfNotNullOrEmpty_m103B3621D75D657C9C1FFAC11717BA56DD0A6BAF (OVRTelemetryMarker_t9BCBB9BBB77B5411E3F71019A5F880C1A16E60F9* __this, String_t* ___0_annotationKey, String_t* ___1_annotationValue, const RuntimeMethod* method) 
@@ -15768,7 +16299,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR OVRTelemetryMarker_t9BCBB9BBB77B5411E3F71019A
 		int32_t L_12;
 		L_12 = OVRTelemetryMarker_get_InstanceKey_m8BE3D5A45BC7A2A74756AE5CCF7923C0CD942DB8_inline(__this, NULL);
 		NullCheck(L_9);
-		VirtualActionInvoker4< int32_t, int16_t, int32_t, int64_t >::Invoke(7, L_9, L_10, L_11, L_12, ((int64_t)(-1)));
+		VirtualActionInvoker4< int32_t, int16_t, int32_t, int64_t >::Invoke(10, L_9, L_10, L_11, L_12, ((int64_t)(-1)));
 		OVRTelemetryMarker_t9BCBB9BBB77B5411E3F71019A5F880C1A16E60F9 L_13 = (*(OVRTelemetryMarker_t9BCBB9BBB77B5411E3F71019A5F880C1A16E60F9*)__this);
 		return L_13;
 	}
@@ -15841,6 +16372,118 @@ IL2CPP_EXTERN_C  OVRTelemetryMarker_t9BCBB9BBB77B5411E3F71019A5F880C1A16E60F9 OV
 	_thisAdjusted = reinterpret_cast<OVRTelemetryMarker_t9BCBB9BBB77B5411E3F71019A5F880C1A16E60F9*>(__this + _offset);
 	OVRTelemetryMarker_t9BCBB9BBB77B5411E3F71019A5F880C1A16E60F9 _returnValue;
 	_returnValue = OVRTelemetryMarker_AddPoint_m5DF94030CCE86DDE95347ECF9A4C581ADF85E2E9(_thisAdjusted, ___0_point, method);
+	return _returnValue;
+}
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR OVRTelemetryMarker_t9BCBB9BBB77B5411E3F71019A5F880C1A16E60F9 OVRTelemetryMarker_AddPoint_m3C8FBFB5BF6C9CD6F013BD5416623EFFD529F655 (OVRTelemetryMarker_t9BCBB9BBB77B5411E3F71019A5F880C1A16E60F9* __this, String_t* ___0_name, const RuntimeMethod* method) 
+{
+	{
+		TelemetryClient_t9CE1E8181AB1E214F15A8AE5ED3356FF9B895F0C* L_0 = __this->____client;
+		int32_t L_1;
+		L_1 = OVRTelemetryMarker_get_MarkerId_m3D5201443D16D96E1B80CDBAD255948F88E5D1A2_inline(__this, NULL);
+		String_t* L_2 = ___0_name;
+		int32_t L_3;
+		L_3 = OVRTelemetryMarker_get_InstanceKey_m8BE3D5A45BC7A2A74756AE5CCF7923C0CD942DB8_inline(__this, NULL);
+		NullCheck(L_0);
+		VirtualActionInvoker4< int32_t, String_t*, int32_t, int64_t >::Invoke(6, L_0, L_1, L_2, L_3, ((int64_t)(-1)));
+		OVRTelemetryMarker_t9BCBB9BBB77B5411E3F71019A5F880C1A16E60F9 L_4 = (*(OVRTelemetryMarker_t9BCBB9BBB77B5411E3F71019A5F880C1A16E60F9*)__this);
+		return L_4;
+	}
+}
+IL2CPP_EXTERN_C  OVRTelemetryMarker_t9BCBB9BBB77B5411E3F71019A5F880C1A16E60F9 OVRTelemetryMarker_AddPoint_m3C8FBFB5BF6C9CD6F013BD5416623EFFD529F655_AdjustorThunk (RuntimeObject* __this, String_t* ___0_name, const RuntimeMethod* method)
+{
+	OVRTelemetryMarker_t9BCBB9BBB77B5411E3F71019A5F880C1A16E60F9* _thisAdjusted;
+	int32_t _offset = 1;
+	_thisAdjusted = reinterpret_cast<OVRTelemetryMarker_t9BCBB9BBB77B5411E3F71019A5F880C1A16E60F9*>(__this + _offset);
+	OVRTelemetryMarker_t9BCBB9BBB77B5411E3F71019A5F880C1A16E60F9 _returnValue;
+	_returnValue = OVRTelemetryMarker_AddPoint_m3C8FBFB5BF6C9CD6F013BD5416623EFFD529F655(_thisAdjusted, ___0_name, method);
+	return _returnValue;
+}
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR OVRTelemetryMarker_t9BCBB9BBB77B5411E3F71019A5F880C1A16E60F9 OVRTelemetryMarker_AddPoint_m5F24BFE1B95E8FAE7D052AAAD6D1AFF061A864C6 (OVRTelemetryMarker_t9BCBB9BBB77B5411E3F71019A5F880C1A16E60F9* __this, String_t* ___0_name, Builder_tCBCB06F4A2C922C71431C0418A7EA386E2383588 ___1_annotationBuilder, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&NativeArrayUnsafeUtility_GetUnsafeReadOnlyPtr_TisAnnotation_tD997D580E0E524DEA7DB2A481FB724AFD5009AF1_mE12DB580972B83E24810D3B9294BB6C156BBEB1E_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&NativeArray_1_Dispose_m3F070B71AE63B3C38E737FEB785F74BC47AFF73D_RuntimeMethod_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	NativeArray_1_t549C775701A480A632CACBFB674D1ED1FA52EB96 V_0;
+	memset((&V_0), 0, sizeof(V_0));
+	OVRTelemetryMarker_t9BCBB9BBB77B5411E3F71019A5F880C1A16E60F9 V_1;
+	memset((&V_1), 0, sizeof(V_1));
+	{
+		NativeArray_1_t549C775701A480A632CACBFB674D1ED1FA52EB96 L_0;
+		L_0 = Builder_ToNativeArray_m55B682A0D2641BE76D3820CC74ACC00FC3FEB435((&___1_annotationBuilder), 2, NULL);
+		V_0 = L_0;
+	}
+	{
+		auto __finallyBlock = il2cpp::utils::Finally([&]
+		{
+
+FINALLY_0020:
+			{
+				NativeArray_1_Dispose_m3F070B71AE63B3C38E737FEB785F74BC47AFF73D((&V_0), NativeArray_1_Dispose_m3F070B71AE63B3C38E737FEB785F74BC47AFF73D_RuntimeMethod_var);
+				return;
+			}
+		});
+		try
+		{
+			String_t* L_1 = ___0_name;
+			NativeArray_1_t549C775701A480A632CACBFB674D1ED1FA52EB96 L_2 = V_0;
+			void* L_3;
+			L_3 = NativeArrayUnsafeUtility_GetUnsafeReadOnlyPtr_TisAnnotation_tD997D580E0E524DEA7DB2A481FB724AFD5009AF1_mE12DB580972B83E24810D3B9294BB6C156BBEB1E(L_2, NativeArrayUnsafeUtility_GetUnsafeReadOnlyPtr_TisAnnotation_tD997D580E0E524DEA7DB2A481FB724AFD5009AF1_mE12DB580972B83E24810D3B9294BB6C156BBEB1E_RuntimeMethod_var);
+			int32_t L_4;
+			L_4 = IL2CPP_NATIVEARRAY_GET_LENGTH(((&V_0))->___m_Length);
+			OVRTelemetryMarker_t9BCBB9BBB77B5411E3F71019A5F880C1A16E60F9 L_5;
+			L_5 = OVRTelemetryMarker_AddPoint_m6F4E7DCA2D2EE8FFF249687BC14A3144865881BA(__this, L_1, (Annotation_tD997D580E0E524DEA7DB2A481FB724AFD5009AF1*)L_3, L_4, NULL);
+			V_1 = L_5;
+			goto IL_002e;
+		}
+		catch(Il2CppExceptionWrapper& e)
+		{
+			__finallyBlock.StoreException(e.ex);
+		}
+	}
+
+IL_002e:
+	{
+		OVRTelemetryMarker_t9BCBB9BBB77B5411E3F71019A5F880C1A16E60F9 L_6 = V_1;
+		return L_6;
+	}
+}
+IL2CPP_EXTERN_C  OVRTelemetryMarker_t9BCBB9BBB77B5411E3F71019A5F880C1A16E60F9 OVRTelemetryMarker_AddPoint_m5F24BFE1B95E8FAE7D052AAAD6D1AFF061A864C6_AdjustorThunk (RuntimeObject* __this, String_t* ___0_name, Builder_tCBCB06F4A2C922C71431C0418A7EA386E2383588 ___1_annotationBuilder, const RuntimeMethod* method)
+{
+	OVRTelemetryMarker_t9BCBB9BBB77B5411E3F71019A5F880C1A16E60F9* _thisAdjusted;
+	int32_t _offset = 1;
+	_thisAdjusted = reinterpret_cast<OVRTelemetryMarker_t9BCBB9BBB77B5411E3F71019A5F880C1A16E60F9*>(__this + _offset);
+	OVRTelemetryMarker_t9BCBB9BBB77B5411E3F71019A5F880C1A16E60F9 _returnValue;
+	_returnValue = OVRTelemetryMarker_AddPoint_m5F24BFE1B95E8FAE7D052AAAD6D1AFF061A864C6(_thisAdjusted, ___0_name, ___1_annotationBuilder, method);
+	return _returnValue;
+}
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR OVRTelemetryMarker_t9BCBB9BBB77B5411E3F71019A5F880C1A16E60F9 OVRTelemetryMarker_AddPoint_m6F4E7DCA2D2EE8FFF249687BC14A3144865881BA (OVRTelemetryMarker_t9BCBB9BBB77B5411E3F71019A5F880C1A16E60F9* __this, String_t* ___0_name, Annotation_tD997D580E0E524DEA7DB2A481FB724AFD5009AF1* ___1_annotations, int32_t ___2_annotationCount, const RuntimeMethod* method) 
+{
+	{
+		TelemetryClient_t9CE1E8181AB1E214F15A8AE5ED3356FF9B895F0C* L_0 = __this->____client;
+		int32_t L_1;
+		L_1 = OVRTelemetryMarker_get_MarkerId_m3D5201443D16D96E1B80CDBAD255948F88E5D1A2_inline(__this, NULL);
+		String_t* L_2 = ___0_name;
+		Annotation_tD997D580E0E524DEA7DB2A481FB724AFD5009AF1* L_3 = ___1_annotations;
+		int32_t L_4 = ___2_annotationCount;
+		int32_t L_5;
+		L_5 = OVRTelemetryMarker_get_InstanceKey_m8BE3D5A45BC7A2A74756AE5CCF7923C0CD942DB8_inline(__this, NULL);
+		NullCheck(L_0);
+		VirtualActionInvoker6< int32_t, String_t*, Annotation_tD997D580E0E524DEA7DB2A481FB724AFD5009AF1*, int32_t, int32_t, int64_t >::Invoke(7, L_0, L_1, L_2, L_3, L_4, L_5, ((int64_t)(-1)));
+		OVRTelemetryMarker_t9BCBB9BBB77B5411E3F71019A5F880C1A16E60F9 L_6 = (*(OVRTelemetryMarker_t9BCBB9BBB77B5411E3F71019A5F880C1A16E60F9*)__this);
+		return L_6;
+	}
+}
+IL2CPP_EXTERN_C  OVRTelemetryMarker_t9BCBB9BBB77B5411E3F71019A5F880C1A16E60F9 OVRTelemetryMarker_AddPoint_m6F4E7DCA2D2EE8FFF249687BC14A3144865881BA_AdjustorThunk (RuntimeObject* __this, String_t* ___0_name, Annotation_tD997D580E0E524DEA7DB2A481FB724AFD5009AF1* ___1_annotations, int32_t ___2_annotationCount, const RuntimeMethod* method)
+{
+	OVRTelemetryMarker_t9BCBB9BBB77B5411E3F71019A5F880C1A16E60F9* _thisAdjusted;
+	int32_t _offset = 1;
+	_thisAdjusted = reinterpret_cast<OVRTelemetryMarker_t9BCBB9BBB77B5411E3F71019A5F880C1A16E60F9*>(__this + _offset);
+	OVRTelemetryMarker_t9BCBB9BBB77B5411E3F71019A5F880C1A16E60F9 _returnValue;
+	_returnValue = OVRTelemetryMarker_AddPoint_m6F4E7DCA2D2EE8FFF249687BC14A3144865881BA(_thisAdjusted, ___0_name, ___1_annotations, ___2_annotationCount, method);
 	return _returnValue;
 }
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void OVRTelemetryMarker_Dispose_mED4BBD01B132F320379441AD2B7ACADB7C10E0DF (OVRTelemetryMarker_t9BCBB9BBB77B5411E3F71019A5F880C1A16E60F9* __this, const RuntimeMethod* method) 
@@ -28335,412 +28978,6 @@ IL_0135:
 #ifdef __clang__
 #pragma clang diagnostic pop
 #endif
-#ifdef __clang__
-#pragma clang diagnostic push
-#pragma clang diagnostic ignored "-Winvalid-offsetof"
-#pragma clang diagnostic ignored "-Wunused-variable"
-#endif
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CU3Ec__cctor_m7F553D26F8DE44339EF5E6BDF746698AB63526D9 (const RuntimeMethod* method) 
-{
-	static bool s_Il2CppMethodInitialized;
-	if (!s_Il2CppMethodInitialized)
-	{
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&U3CU3Ec_tFF0984A3E8C3018E05A90CDBA78ED33D9E839CFA_il2cpp_TypeInfo_var);
-		s_Il2CppMethodInitialized = true;
-	}
-	{
-		U3CU3Ec_tFF0984A3E8C3018E05A90CDBA78ED33D9E839CFA* L_0 = (U3CU3Ec_tFF0984A3E8C3018E05A90CDBA78ED33D9E839CFA*)il2cpp_codegen_object_new(U3CU3Ec_tFF0984A3E8C3018E05A90CDBA78ED33D9E839CFA_il2cpp_TypeInfo_var);
-		U3CU3Ec__ctor_m903DF6271441EBCED1B2A58D87A2D7EAAA9A64B1(L_0, NULL);
-		((U3CU3Ec_tFF0984A3E8C3018E05A90CDBA78ED33D9E839CFA_StaticFields*)il2cpp_codegen_static_fields_for(U3CU3Ec_tFF0984A3E8C3018E05A90CDBA78ED33D9E839CFA_il2cpp_TypeInfo_var))->___U3CU3E9 = L_0;
-		Il2CppCodeGenWriteBarrier((void**)(&((U3CU3Ec_tFF0984A3E8C3018E05A90CDBA78ED33D9E839CFA_StaticFields*)il2cpp_codegen_static_fields_for(U3CU3Ec_tFF0984A3E8C3018E05A90CDBA78ED33D9E839CFA_il2cpp_TypeInfo_var))->___U3CU3E9), (void*)L_0);
-		return;
-	}
-}
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CU3Ec__ctor_m903DF6271441EBCED1B2A58D87A2D7EAAA9A64B1 (U3CU3Ec_tFF0984A3E8C3018E05A90CDBA78ED33D9E839CFA* __this, const RuntimeMethod* method) 
-{
-	{
-		Object__ctor_mE837C6B9FA8C6D5D109F4B2EC885D79919AC0EA2(__this, NULL);
-		return;
-	}
-}
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool U3CU3Ec_U3CUpdateInputU3Eb__6_0_m8FDAF082DFF4A9138C281FC46DAFE53F860E7FB4 (U3CU3Ec_tFF0984A3E8C3018E05A90CDBA78ED33D9E839CFA* __this, OVRBone_tB3106B7D44FF86F8A767E0E6160EAB259B70A14A* ___0_b, const RuntimeMethod* method) 
-{
-	{
-		OVRBone_tB3106B7D44FF86F8A767E0E6160EAB259B70A14A* L_0 = ___0_b;
-		NullCheck(L_0);
-		int32_t L_1;
-		L_1 = OVRBone_get_Id_m4BC533EE83B90F49F45D80E64A5EC5572E37E06C_inline(L_0, NULL);
-		return (bool)((((int32_t)L_1) == ((int32_t)((int32_t)20)))? 1 : 0);
-	}
-}
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool U3CU3Ec_U3CUpdateInputU3Eb__6_1_m8F3BEC46E2550A19D7CA1621BA33A03A91C06ACF (U3CU3Ec_tFF0984A3E8C3018E05A90CDBA78ED33D9E839CFA* __this, OVRBone_tB3106B7D44FF86F8A767E0E6160EAB259B70A14A* ___0_b, const RuntimeMethod* method) 
-{
-	{
-		OVRBone_tB3106B7D44FF86F8A767E0E6160EAB259B70A14A* L_0 = ___0_b;
-		NullCheck(L_0);
-		int32_t L_1;
-		L_1 = OVRBone_get_Id_m4BC533EE83B90F49F45D80E64A5EC5572E37E06C_inline(L_0, NULL);
-		return (bool)((((int32_t)L_1) == ((int32_t)0))? 1 : 0);
-	}
-}
-#ifdef __clang__
-#pragma clang diagnostic pop
-#endif
-#ifdef __clang__
-#pragma clang diagnostic push
-#pragma clang diagnostic ignored "-Winvalid-offsetof"
-#pragma clang diagnostic ignored "-Wunused-variable"
-#endif
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void KeyboardEventListener__ctor_mB2AE7EDDF42AD0A5678F6A41CE1B7E3271CA78FB (KeyboardEventListener_t4752034E8AA24D9A99872C445F691738E687D320* __this, OVRVirtualKeyboard_t63B9829B9705A7EBB2E236CA38C35731E0BF8837* ___0_keyboard, const RuntimeMethod* method) 
-{
-	{
-		Object__ctor_mE837C6B9FA8C6D5D109F4B2EC885D79919AC0EA2(__this, NULL);
-		OVRVirtualKeyboard_t63B9829B9705A7EBB2E236CA38C35731E0BF8837* L_0 = ___0_keyboard;
-		__this->___keyboard_ = L_0;
-		Il2CppCodeGenWriteBarrier((void**)(&__this->___keyboard_), (void*)L_0);
-		return;
-	}
-}
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void KeyboardEventListener_OnEvent_m9D5CC7D1075BDF2CE2F6BB4C46407184C50A3D40 (KeyboardEventListener_t4752034E8AA24D9A99872C445F691738E687D320* __this, EventDataBuffer_t5836E8ECE1E094863DEDCC92818AEF39C2F646E8 ___0_eventDataBuffer, const RuntimeMethod* method) 
-{
-	static bool s_Il2CppMethodInitialized;
-	if (!s_Il2CppMethodInitialized)
-	{
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&UnityEvent_1_Invoke_mA633B48B5D287DA856FB954AC3E4012487E63C15_RuntimeMethod_var);
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral1489F923C4DCA729178B3E3233458550D8DDDF29);
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralDA39A3EE5E6B4B0D3255BFEF95601890AFD80709);
-		s_Il2CppMethodInitialized = true;
-	}
-	int32_t V_0 = 0;
-	String_t* V_1 = NULL;
-	CommitTextUnityEvent_tA67509762D0EADB6C790FACE43A361409EE26D0B* G_B6_0 = NULL;
-	CommitTextUnityEvent_tA67509762D0EADB6C790FACE43A361409EE26D0B* G_B5_0 = NULL;
-	Action_1_t3CB5D1A819C3ED3F99E9E39F890F18633253949A* G_B9_0 = NULL;
-	Action_1_t3CB5D1A819C3ED3F99E9E39F890F18633253949A* G_B8_0 = NULL;
-	UnityEvent_tDC2C3548799DBC91D1E3F3DE60083A66F4751977* G_B12_0 = NULL;
-	UnityEvent_tDC2C3548799DBC91D1E3F3DE60083A66F4751977* G_B11_0 = NULL;
-	Action_tD00B0A84D7945E50C2DFFC28EFEE6ED44ED2AD07* G_B15_0 = NULL;
-	Action_tD00B0A84D7945E50C2DFFC28EFEE6ED44ED2AD07* G_B14_0 = NULL;
-	UnityEvent_tDC2C3548799DBC91D1E3F3DE60083A66F4751977* G_B18_0 = NULL;
-	UnityEvent_tDC2C3548799DBC91D1E3F3DE60083A66F4751977* G_B17_0 = NULL;
-	Action_tD00B0A84D7945E50C2DFFC28EFEE6ED44ED2AD07* G_B21_0 = NULL;
-	Action_tD00B0A84D7945E50C2DFFC28EFEE6ED44ED2AD07* G_B20_0 = NULL;
-	UnityEvent_tDC2C3548799DBC91D1E3F3DE60083A66F4751977* G_B24_0 = NULL;
-	UnityEvent_tDC2C3548799DBC91D1E3F3DE60083A66F4751977* G_B23_0 = NULL;
-	Action_tD00B0A84D7945E50C2DFFC28EFEE6ED44ED2AD07* G_B27_0 = NULL;
-	Action_tD00B0A84D7945E50C2DFFC28EFEE6ED44ED2AD07* G_B26_0 = NULL;
-	UnityEvent_tDC2C3548799DBC91D1E3F3DE60083A66F4751977* G_B30_0 = NULL;
-	UnityEvent_tDC2C3548799DBC91D1E3F3DE60083A66F4751977* G_B29_0 = NULL;
-	Action_tD00B0A84D7945E50C2DFFC28EFEE6ED44ED2AD07* G_B33_0 = NULL;
-	Action_tD00B0A84D7945E50C2DFFC28EFEE6ED44ED2AD07* G_B32_0 = NULL;
-	{
-		EventDataBuffer_t5836E8ECE1E094863DEDCC92818AEF39C2F646E8 L_0 = ___0_eventDataBuffer;
-		int32_t L_1 = L_0.___EventType;
-		V_0 = L_1;
-		int32_t L_2 = V_0;
-		switch (((int32_t)il2cpp_codegen_subtract((int32_t)L_2, ((int32_t)201))))
-		{
-			case 0:
-			{
-				goto IL_0028;
-			}
-			case 1:
-			{
-				goto IL_0093;
-			}
-			case 2:
-			{
-				goto IL_00bf;
-			}
-			case 3:
-			{
-				goto IL_00eb;
-			}
-			case 4:
-			{
-				goto IL_0117;
-			}
-		}
-	}
-	{
-		return;
-	}
-
-IL_0028:
-	{
-		OVRVirtualKeyboard_t63B9829B9705A7EBB2E236CA38C35731E0BF8837* L_3 = __this->___keyboard_;
-		NullCheck(L_3);
-		CommitTextUnityEvent_tA67509762D0EADB6C790FACE43A361409EE26D0B* L_4 = L_3->___CommitTextEvent;
-		if (L_4)
-		{
-			goto IL_0045;
-		}
-	}
-	{
-		OVRVirtualKeyboard_t63B9829B9705A7EBB2E236CA38C35731E0BF8837* L_5 = __this->___keyboard_;
-		NullCheck(L_5);
-		Action_1_t3CB5D1A819C3ED3F99E9E39F890F18633253949A* L_6 = L_5->___CommitText;
-		if (!L_6)
-		{
-			goto IL_0142;
-		}
-	}
-
-IL_0045:
-	{
-		Encoding_t65CDEF28CF20A7B8C92E85A4E808920C2465F095* L_7;
-		L_7 = Encoding_get_UTF8_m9FA98A53CE96FD6D02982625C5246DD36C1235C9(NULL);
-		EventDataBuffer_t5836E8ECE1E094863DEDCC92818AEF39C2F646E8 L_8 = ___0_eventDataBuffer;
-		ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* L_9 = L_8.___EventData;
-		NullCheck(L_7);
-		String_t* L_10;
-		L_10 = VirtualFuncInvoker1< String_t*, ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* >::Invoke(34, L_7, L_9);
-		NullCheck(L_10);
-		String_t* L_11;
-		L_11 = String_Replace_mABDB7003A1D0AEDCAE9FF85E3DFFFBA752D2A166(L_10, _stringLiteral1489F923C4DCA729178B3E3233458550D8DDDF29, _stringLiteralDA39A3EE5E6B4B0D3255BFEF95601890AFD80709, NULL);
-		V_1 = L_11;
-		OVRVirtualKeyboard_t63B9829B9705A7EBB2E236CA38C35731E0BF8837* L_12 = __this->___keyboard_;
-		NullCheck(L_12);
-		CommitTextUnityEvent_tA67509762D0EADB6C790FACE43A361409EE26D0B* L_13 = L_12->___CommitTextEvent;
-		CommitTextUnityEvent_tA67509762D0EADB6C790FACE43A361409EE26D0B* L_14 = L_13;
-		if (L_14)
-		{
-			G_B6_0 = L_14;
-			goto IL_0076;
-		}
-		G_B5_0 = L_14;
-	}
-	{
-		goto IL_007c;
-	}
-
-IL_0076:
-	{
-		String_t* L_15 = V_1;
-		NullCheck(G_B6_0);
-		UnityEvent_1_Invoke_mA633B48B5D287DA856FB954AC3E4012487E63C15(G_B6_0, L_15, UnityEvent_1_Invoke_mA633B48B5D287DA856FB954AC3E4012487E63C15_RuntimeMethod_var);
-	}
-
-IL_007c:
-	{
-		OVRVirtualKeyboard_t63B9829B9705A7EBB2E236CA38C35731E0BF8837* L_16 = __this->___keyboard_;
-		NullCheck(L_16);
-		Action_1_t3CB5D1A819C3ED3F99E9E39F890F18633253949A* L_17 = L_16->___CommitText;
-		Action_1_t3CB5D1A819C3ED3F99E9E39F890F18633253949A* L_18 = L_17;
-		if (L_18)
-		{
-			G_B9_0 = L_18;
-			goto IL_008c;
-		}
-		G_B8_0 = L_18;
-	}
-	{
-		return;
-	}
-
-IL_008c:
-	{
-		String_t* L_19 = V_1;
-		NullCheck(G_B9_0);
-		Action_1_Invoke_m690438AAE38F9762172E3AE0A33D0B42ACD35790_inline(G_B9_0, L_19, NULL);
-		return;
-	}
-
-IL_0093:
-	{
-		OVRVirtualKeyboard_t63B9829B9705A7EBB2E236CA38C35731E0BF8837* L_20 = __this->___keyboard_;
-		NullCheck(L_20);
-		UnityEvent_tDC2C3548799DBC91D1E3F3DE60083A66F4751977* L_21 = L_20->___BackspaceEvent;
-		UnityEvent_tDC2C3548799DBC91D1E3F3DE60083A66F4751977* L_22 = L_21;
-		if (L_22)
-		{
-			G_B12_0 = L_22;
-			goto IL_00a4;
-		}
-		G_B11_0 = L_22;
-	}
-	{
-		goto IL_00a9;
-	}
-
-IL_00a4:
-	{
-		NullCheck(G_B12_0);
-		UnityEvent_Invoke_mFBF80D59B03C30C5FE6A06F897D954ACADE061D2(G_B12_0, NULL);
-	}
-
-IL_00a9:
-	{
-		OVRVirtualKeyboard_t63B9829B9705A7EBB2E236CA38C35731E0BF8837* L_23 = __this->___keyboard_;
-		NullCheck(L_23);
-		Action_tD00B0A84D7945E50C2DFFC28EFEE6ED44ED2AD07* L_24 = L_23->___Backspace;
-		Action_tD00B0A84D7945E50C2DFFC28EFEE6ED44ED2AD07* L_25 = L_24;
-		if (L_25)
-		{
-			G_B15_0 = L_25;
-			goto IL_00b9;
-		}
-		G_B14_0 = L_25;
-	}
-	{
-		return;
-	}
-
-IL_00b9:
-	{
-		NullCheck(G_B15_0);
-		Action_Invoke_m7126A54DACA72B845424072887B5F3A51FC3808E_inline(G_B15_0, NULL);
-		return;
-	}
-
-IL_00bf:
-	{
-		OVRVirtualKeyboard_t63B9829B9705A7EBB2E236CA38C35731E0BF8837* L_26 = __this->___keyboard_;
-		NullCheck(L_26);
-		UnityEvent_tDC2C3548799DBC91D1E3F3DE60083A66F4751977* L_27 = L_26->___EnterEvent;
-		UnityEvent_tDC2C3548799DBC91D1E3F3DE60083A66F4751977* L_28 = L_27;
-		if (L_28)
-		{
-			G_B18_0 = L_28;
-			goto IL_00d0;
-		}
-		G_B17_0 = L_28;
-	}
-	{
-		goto IL_00d5;
-	}
-
-IL_00d0:
-	{
-		NullCheck(G_B18_0);
-		UnityEvent_Invoke_mFBF80D59B03C30C5FE6A06F897D954ACADE061D2(G_B18_0, NULL);
-	}
-
-IL_00d5:
-	{
-		OVRVirtualKeyboard_t63B9829B9705A7EBB2E236CA38C35731E0BF8837* L_29 = __this->___keyboard_;
-		NullCheck(L_29);
-		Action_tD00B0A84D7945E50C2DFFC28EFEE6ED44ED2AD07* L_30 = L_29->___Enter;
-		Action_tD00B0A84D7945E50C2DFFC28EFEE6ED44ED2AD07* L_31 = L_30;
-		if (L_31)
-		{
-			G_B21_0 = L_31;
-			goto IL_00e5;
-		}
-		G_B20_0 = L_31;
-	}
-	{
-		return;
-	}
-
-IL_00e5:
-	{
-		NullCheck(G_B21_0);
-		Action_Invoke_m7126A54DACA72B845424072887B5F3A51FC3808E_inline(G_B21_0, NULL);
-		return;
-	}
-
-IL_00eb:
-	{
-		OVRVirtualKeyboard_t63B9829B9705A7EBB2E236CA38C35731E0BF8837* L_32 = __this->___keyboard_;
-		NullCheck(L_32);
-		UnityEvent_tDC2C3548799DBC91D1E3F3DE60083A66F4751977* L_33 = L_32->___KeyboardShownEvent;
-		UnityEvent_tDC2C3548799DBC91D1E3F3DE60083A66F4751977* L_34 = L_33;
-		if (L_34)
-		{
-			G_B24_0 = L_34;
-			goto IL_00fc;
-		}
-		G_B23_0 = L_34;
-	}
-	{
-		goto IL_0101;
-	}
-
-IL_00fc:
-	{
-		NullCheck(G_B24_0);
-		UnityEvent_Invoke_mFBF80D59B03C30C5FE6A06F897D954ACADE061D2(G_B24_0, NULL);
-	}
-
-IL_0101:
-	{
-		OVRVirtualKeyboard_t63B9829B9705A7EBB2E236CA38C35731E0BF8837* L_35 = __this->___keyboard_;
-		NullCheck(L_35);
-		Action_tD00B0A84D7945E50C2DFFC28EFEE6ED44ED2AD07* L_36 = L_35->___KeyboardShown;
-		Action_tD00B0A84D7945E50C2DFFC28EFEE6ED44ED2AD07* L_37 = L_36;
-		if (L_37)
-		{
-			G_B27_0 = L_37;
-			goto IL_0111;
-		}
-		G_B26_0 = L_37;
-	}
-	{
-		return;
-	}
-
-IL_0111:
-	{
-		NullCheck(G_B27_0);
-		Action_Invoke_m7126A54DACA72B845424072887B5F3A51FC3808E_inline(G_B27_0, NULL);
-		return;
-	}
-
-IL_0117:
-	{
-		OVRVirtualKeyboard_t63B9829B9705A7EBB2E236CA38C35731E0BF8837* L_38 = __this->___keyboard_;
-		NullCheck(L_38);
-		UnityEvent_tDC2C3548799DBC91D1E3F3DE60083A66F4751977* L_39 = L_38->___KeyboardHiddenEvent;
-		UnityEvent_tDC2C3548799DBC91D1E3F3DE60083A66F4751977* L_40 = L_39;
-		if (L_40)
-		{
-			G_B30_0 = L_40;
-			goto IL_0128;
-		}
-		G_B29_0 = L_40;
-	}
-	{
-		goto IL_012d;
-	}
-
-IL_0128:
-	{
-		NullCheck(G_B30_0);
-		UnityEvent_Invoke_mFBF80D59B03C30C5FE6A06F897D954ACADE061D2(G_B30_0, NULL);
-	}
-
-IL_012d:
-	{
-		OVRVirtualKeyboard_t63B9829B9705A7EBB2E236CA38C35731E0BF8837* L_41 = __this->___keyboard_;
-		NullCheck(L_41);
-		Action_tD00B0A84D7945E50C2DFFC28EFEE6ED44ED2AD07* L_42 = L_41->___KeyboardHidden;
-		Action_tD00B0A84D7945E50C2DFFC28EFEE6ED44ED2AD07* L_43 = L_42;
-		if (L_43)
-		{
-			G_B33_0 = L_43;
-			goto IL_013d;
-		}
-		G_B32_0 = L_43;
-	}
-	{
-		return;
-	}
-
-IL_013d:
-	{
-		NullCheck(G_B33_0);
-		Action_Invoke_m7126A54DACA72B845424072887B5F3A51FC3808E_inline(G_B33_0, NULL);
-	}
-
-IL_0142:
-	{
-		return;
-	}
-}
-#ifdef __clang__
-#pragma clang diagnostic pop
-#endif
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR float OVRSceneVolume_get_Width_m68F842EEC1F84E966857DBCBD644858A454424DE_inline (OVRSceneVolume_tCC45DB52610BEC6D6DF652DDFD4056010ABAB8CA* __this, const RuntimeMethod* method) 
 {
 	{
@@ -30254,18 +30491,6 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR bool OVRSkeleton_get_IsDataValid_
 		return L_0;
 	}
 }
-IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR int32_t OVRBone_get_Id_m4BC533EE83B90F49F45D80E64A5EC5572E37E06C_inline (OVRBone_tB3106B7D44FF86F8A767E0E6160EAB259B70A14A* __this, const RuntimeMethod* method) 
-{
-	{
-		int32_t L_0 = __this->___U3CIdU3Ek__BackingField;
-		return L_0;
-	}
-}
-IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void Action_Invoke_m7126A54DACA72B845424072887B5F3A51FC3808E_inline (Action_tD00B0A84D7945E50C2DFFC28EFEE6ED44ED2AD07* __this, const RuntimeMethod* method) 
-{
-	typedef void (*FunctionPointerType) (RuntimeObject*, const RuntimeMethod*);
-	((FunctionPointerType)__this->___invoke_impl)((Il2CppObject*)__this->___method_code, reinterpret_cast<RuntimeMethod*>(__this->___method));
-}
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR RuntimeObject* Enumerator_get_Current_m6330F15D18EE4F547C05DF9BF83C5EB710376027_gshared_inline (Enumerator_t9473BAB568A27E2339D48C1F91319E0F6D244D7A* __this, const RuntimeMethod* method) 
 {
 	{
@@ -31330,11 +31555,6 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR int32_t Queue_1_get_Count_mAA6408
 		int32_t L_0 = __this->____size;
 		return L_0;
 	}
-}
-IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void Action_1_Invoke_mF2422B2DD29F74CE66F791C3F68E288EC7C3DB9E_gshared_inline (Action_1_t6F9EB113EB3F16226AEF811A2744F4111C116C87* __this, RuntimeObject* ___0_obj, const RuntimeMethod* method) 
-{
-	typedef void (*FunctionPointerType) (RuntimeObject*, RuntimeObject*, const RuntimeMethod*);
-	((FunctionPointerType)__this->___invoke_impl)((Il2CppObject*)__this->___method_code, ___0_obj, reinterpret_cast<RuntimeMethod*>(__this->___method));
 }
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR float Vector3_Dot_mBB86BB940AA0A32FA7D3C02AC42E5BC7095A5D52_inline (Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___0_lhs, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___1_rhs, const RuntimeMethod* method) 
 {

@@ -2256,6 +2256,37 @@ struct MeshFilter_t6D1CE2473A1E45AC73013400585A1163BF66B2F5  : public Component_
 struct NotSupportedException_t1429765983D409BD2986508963C98D214E4EBF4A  : public SystemException_tCC48D868298F4C0705279823E34B00F4FBDB7295
 {
 };
+struct OVRMixedRealityCaptureSettings_tF6078D6B59F16A0EE3DEE4144FCED347444B9198  : public ScriptableObject_tB3BFDB921A1B1795B38A5417D3B97A89A140436A
+{
+	bool ___enableMixedReality;
+	LayerMask_t97CB6BDADEDC3D6423C7BCFEA7F86DA2EC6241DB ___extraHiddenLayers;
+	LayerMask_t97CB6BDADEDC3D6423C7BCFEA7F86DA2EC6241DB ___extraVisibleLayers;
+	bool ___dynamicCullingMask;
+	int32_t ___compositionMethod;
+	Color_tD001788D726C3A7F1379BEED0260B9591F440C1F ___externalCompositionBackdropColorRift;
+	Color_tD001788D726C3A7F1379BEED0260B9591F440C1F ___externalCompositionBackdropColorQuest;
+	int32_t ___capturingCameraDevice;
+	bool ___flipCameraFrameHorizontally;
+	bool ___flipCameraFrameVertically;
+	float ___handPoseStateLatency;
+	float ___sandwichCompositionRenderLatency;
+	int32_t ___sandwichCompositionBufferedFrames;
+	Color_tD001788D726C3A7F1379BEED0260B9591F440C1F ___chromaKeyColor;
+	float ___chromaKeySimilarity;
+	float ___chromaKeySmoothRange;
+	float ___chromaKeySpillRange;
+	bool ___useDynamicLighting;
+	int32_t ___depthQuality;
+	float ___dynamicLightingSmoothFactor;
+	float ___dynamicLightingDepthVariationClampingValue;
+	int32_t ___virtualGreenScreenType;
+	float ___virtualGreenScreenTopY;
+	float ___virtualGreenScreenBottomY;
+	bool ___virtualGreenScreenApplyDepthCulling;
+	float ___virtualGreenScreenDepthTolerance;
+	int32_t ___mrcActivationMode;
+	InstantiateMrcCameraDelegate_t26D39C3003CADD2CBA4E7C5EB75333089B2F03C8* ___U3COVRMixedRealityCaptureConfiguration_instantiateMixedRealityCameraGameObjectU3Ek__BackingField;
+};
 struct OVRRuntimeAssetsBase_tE4CD61E3161FD2FCF5A0AF472B1ED3E14A3E946D  : public ScriptableObject_tB3BFDB921A1B1795B38A5417D3B97A89A140436A
 {
 };
@@ -2266,6 +2297,9 @@ struct Rigidbody_t268697F5A994213ED97393309870968BC1C7393C  : public Component_t
 {
 };
 struct Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1  : public Component_t39FBE53E5EFCF4409111FB22C15FF73717632EC3
+{
+};
+struct InstantiateMrcCameraDelegate_t26D39C3003CADD2CBA4E7C5EB75333089B2F03C8  : public MulticastDelegate_t
 {
 };
 struct EyeGazesStateInternal_tBF79AEE2A05EA3315FA4B97D5C758FA977BD39BF 
@@ -4163,6 +4197,9 @@ IL2CPP_EXTERN_C IL2CPP_NO_INLINE IL2CPP_METHOD_ATTR void List_1_AddWithResize_m7
 IL2CPP_EXTERN_C IL2CPP_NO_INLINE IL2CPP_METHOD_ATTR void List_1_AddWithResize_m6B403207DC8AC640C29234B59D769B244BA3666C_gshared (List_1_t8292C421BBB00D7661DC07462822936152BAB446* __this, RaycastResult_tEC6A7B7CABA99C386F054F01E498AEC426CF8023 ___0_item, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_NO_INLINE IL2CPP_METHOD_ATTR void List_1_AddWithResize_m3551D791017D2B466659776C1AF091648B739BA4_gshared (List_1_t9F19053F72A3E5B96604F70A14B49B27869D5C97* __this, RaycastHit_tD5BA806430120B2A8CDCB78DE7A87700A87525A4 ___0_item, const RuntimeMethod* method) ;
 
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR Color_tD001788D726C3A7F1379BEED0260B9591F440C1F Color_get_green_mEB001F2CD8C68C6BBAEF9101990B779D3AA2A6EF_inline (const RuntimeMethod* method) ;
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR Color_tD001788D726C3A7F1379BEED0260B9591F440C1F Color_get_clear_m02E023A7D396B973288B3915F6F24FBF7E0DC81D_inline (const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ScriptableObject__ctor_mD037FDB0B487295EA47F79A4DB1BF1846C9087FF (ScriptableObject_tB3BFDB921A1B1795B38A5417D3B97A89A140436A* __this, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Object_op_Implicit_m93896EF7D68FA113C42D3FE2BC6F661FC7EF514A (Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C* ___0_exists, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Debug_LogWarning_m33EF1B897E0C7C6FF538989610BFAFFEF4628CA9 (RuntimeObject* ___0_message, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Media_GetInitialized_m0786F11D130FC9598B90C01A542F76A002F4D048 (const RuntimeMethod* method) ;
@@ -4483,7 +4520,6 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SpriteRenderer_set_color_mB0EEC2845A0347
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Transform_set_forward_mA178B5CF4F0F6133F9AF8ED3A4ECD2C604C60C26 (Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* __this, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___0_value, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void PropertyAttribute__ctor_m19247686E165101F140615C7306DC2DA3953D97D (PropertyAttribute_t5E0CB5A6CDA6E24CBD4FF26DE3B0C29D8BB54BF0* __this, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void OVRDisplay_RecenterPose_m5D4F83D11B52934020DD34569B60A8E0D2E0FD82 (OVRDisplay_t1518043CC531CD088400F80558DF7A849ECA2D27* __this, const RuntimeMethod* method) ;
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ScriptableObject__ctor_mD037FDB0B487295EA47F79A4DB1BF1846C9087FF (ScriptableObject_tB3BFDB921A1B1795B38A5417D3B97A89A140436A* __this, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool OVRRuntimeController_IsModelSupported_m7C7DCC822D4289955E679DA53DE682601CD27353 (OVRRuntimeController_tE0DEC8FC6F7D5AAA2ADFD1A579723B5CAE91103A* __this, String_t* ___0_modelPath, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* OVRRuntimeController_UpdateControllerModel_mEAE1CDE7A068662E65647C9E50C161D55086AA9A (OVRRuntimeController_tE0DEC8FC6F7D5AAA2ADFD1A579723B5CAE91103A* __this, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Coroutine_t85EA685566A254C23F3FD77AB5BDFFFF8799596B* MonoBehaviour_StartCoroutine_m4CAFF732AA28CD3BDC5363B44A863575530EC812 (MonoBehaviour_t532A11E69716D348D8AA7F854AFCBFCB8AD17F71* __this, RuntimeObject* ___0_routine, const RuntimeMethod* method) ;
@@ -4907,6 +4943,460 @@ inline void List_1_AddWithResize_m3551D791017D2B466659776C1AF091648B739BA4 (List
 	((  void (*) (List_1_t9F19053F72A3E5B96604F70A14B49B27869D5C97*, RaycastHit_tD5BA806430120B2A8CDCB78DE7A87700A87525A4, const RuntimeMethod*))List_1_AddWithResize_m3551D791017D2B466659776C1AF091648B739BA4_gshared)(__this, ___0_item, method);
 }
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR float Vector3_Magnitude_m21652D951393A3D7CE92CE40049A0E7F76544D1B_inline (Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___0_vector, const RuntimeMethod* method) ;
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool OVRMixedRealityCaptureSettings_OVRMixedRealityCaptureConfiguration_get_enableMixedReality_m33562AB9D87D64EDA88ADC0A87FF55B5E262FA84 (OVRMixedRealityCaptureSettings_tF6078D6B59F16A0EE3DEE4144FCED347444B9198* __this, const RuntimeMethod* method) 
+{
+	{
+		bool L_0 = __this->___enableMixedReality;
+		return L_0;
+	}
+}
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void OVRMixedRealityCaptureSettings_OVRMixedRealityCaptureConfiguration_set_enableMixedReality_mCEB81DF0F2A0B24BBE671A653464CDCA4D901778 (OVRMixedRealityCaptureSettings_tF6078D6B59F16A0EE3DEE4144FCED347444B9198* __this, bool ___0_value, const RuntimeMethod* method) 
+{
+	{
+		bool L_0 = ___0_value;
+		__this->___enableMixedReality = L_0;
+		return;
+	}
+}
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR LayerMask_t97CB6BDADEDC3D6423C7BCFEA7F86DA2EC6241DB OVRMixedRealityCaptureSettings_OVRMixedRealityCaptureConfiguration_get_extraHiddenLayers_m7BCF678527C5A08FA2C47FCE0DD4D89491FDC0EF (OVRMixedRealityCaptureSettings_tF6078D6B59F16A0EE3DEE4144FCED347444B9198* __this, const RuntimeMethod* method) 
+{
+	{
+		LayerMask_t97CB6BDADEDC3D6423C7BCFEA7F86DA2EC6241DB L_0 = __this->___extraHiddenLayers;
+		return L_0;
+	}
+}
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void OVRMixedRealityCaptureSettings_OVRMixedRealityCaptureConfiguration_set_extraHiddenLayers_m67348AA281031F29D89B9303B465CB9AB1200C13 (OVRMixedRealityCaptureSettings_tF6078D6B59F16A0EE3DEE4144FCED347444B9198* __this, LayerMask_t97CB6BDADEDC3D6423C7BCFEA7F86DA2EC6241DB ___0_value, const RuntimeMethod* method) 
+{
+	{
+		LayerMask_t97CB6BDADEDC3D6423C7BCFEA7F86DA2EC6241DB L_0 = ___0_value;
+		__this->___extraHiddenLayers = L_0;
+		return;
+	}
+}
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR LayerMask_t97CB6BDADEDC3D6423C7BCFEA7F86DA2EC6241DB OVRMixedRealityCaptureSettings_OVRMixedRealityCaptureConfiguration_get_extraVisibleLayers_m9608C341CFF6473F46644984904FDCFB402AA2E8 (OVRMixedRealityCaptureSettings_tF6078D6B59F16A0EE3DEE4144FCED347444B9198* __this, const RuntimeMethod* method) 
+{
+	{
+		LayerMask_t97CB6BDADEDC3D6423C7BCFEA7F86DA2EC6241DB L_0 = __this->___extraVisibleLayers;
+		return L_0;
+	}
+}
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void OVRMixedRealityCaptureSettings_OVRMixedRealityCaptureConfiguration_set_extraVisibleLayers_mDF04842D50214EB7D8C63A02C830BC9714C4BFE7 (OVRMixedRealityCaptureSettings_tF6078D6B59F16A0EE3DEE4144FCED347444B9198* __this, LayerMask_t97CB6BDADEDC3D6423C7BCFEA7F86DA2EC6241DB ___0_value, const RuntimeMethod* method) 
+{
+	{
+		LayerMask_t97CB6BDADEDC3D6423C7BCFEA7F86DA2EC6241DB L_0 = ___0_value;
+		__this->___extraVisibleLayers = L_0;
+		return;
+	}
+}
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool OVRMixedRealityCaptureSettings_OVRMixedRealityCaptureConfiguration_get_dynamicCullingMask_m101A8BC9EC5719C748B37A24968A35D1276AF705 (OVRMixedRealityCaptureSettings_tF6078D6B59F16A0EE3DEE4144FCED347444B9198* __this, const RuntimeMethod* method) 
+{
+	{
+		bool L_0 = __this->___dynamicCullingMask;
+		return L_0;
+	}
+}
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void OVRMixedRealityCaptureSettings_OVRMixedRealityCaptureConfiguration_set_dynamicCullingMask_m17B30D2B47EA0F4D91D9478D09DAC80A79F6395B (OVRMixedRealityCaptureSettings_tF6078D6B59F16A0EE3DEE4144FCED347444B9198* __this, bool ___0_value, const RuntimeMethod* method) 
+{
+	{
+		bool L_0 = ___0_value;
+		__this->___dynamicCullingMask = L_0;
+		return;
+	}
+}
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t OVRMixedRealityCaptureSettings_OVRMixedRealityCaptureConfiguration_get_compositionMethod_m70C4CEBBBB610D876AB15A93FAD0F1B8409EA0B3 (OVRMixedRealityCaptureSettings_tF6078D6B59F16A0EE3DEE4144FCED347444B9198* __this, const RuntimeMethod* method) 
+{
+	{
+		int32_t L_0 = __this->___compositionMethod;
+		return L_0;
+	}
+}
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void OVRMixedRealityCaptureSettings_OVRMixedRealityCaptureConfiguration_set_compositionMethod_m2876B5FCDC546773A1BA9B45E851B845DB39DF24 (OVRMixedRealityCaptureSettings_tF6078D6B59F16A0EE3DEE4144FCED347444B9198* __this, int32_t ___0_value, const RuntimeMethod* method) 
+{
+	{
+		int32_t L_0 = ___0_value;
+		__this->___compositionMethod = L_0;
+		return;
+	}
+}
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Color_tD001788D726C3A7F1379BEED0260B9591F440C1F OVRMixedRealityCaptureSettings_OVRMixedRealityCaptureConfiguration_get_externalCompositionBackdropColorRift_m3D573874F5671ACB88979AFF521D9C4AA9F4A2D8 (OVRMixedRealityCaptureSettings_tF6078D6B59F16A0EE3DEE4144FCED347444B9198* __this, const RuntimeMethod* method) 
+{
+	{
+		Color_tD001788D726C3A7F1379BEED0260B9591F440C1F L_0 = __this->___externalCompositionBackdropColorRift;
+		return L_0;
+	}
+}
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void OVRMixedRealityCaptureSettings_OVRMixedRealityCaptureConfiguration_set_externalCompositionBackdropColorRift_m0E8764A0442C5590265FAE4BABD4E41528260A80 (OVRMixedRealityCaptureSettings_tF6078D6B59F16A0EE3DEE4144FCED347444B9198* __this, Color_tD001788D726C3A7F1379BEED0260B9591F440C1F ___0_value, const RuntimeMethod* method) 
+{
+	{
+		Color_tD001788D726C3A7F1379BEED0260B9591F440C1F L_0 = ___0_value;
+		__this->___externalCompositionBackdropColorRift = L_0;
+		return;
+	}
+}
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Color_tD001788D726C3A7F1379BEED0260B9591F440C1F OVRMixedRealityCaptureSettings_OVRMixedRealityCaptureConfiguration_get_externalCompositionBackdropColorQuest_m1CC0485A8C50A5ABEED52AD0B86CD2D744845B18 (OVRMixedRealityCaptureSettings_tF6078D6B59F16A0EE3DEE4144FCED347444B9198* __this, const RuntimeMethod* method) 
+{
+	{
+		Color_tD001788D726C3A7F1379BEED0260B9591F440C1F L_0 = __this->___externalCompositionBackdropColorQuest;
+		return L_0;
+	}
+}
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void OVRMixedRealityCaptureSettings_OVRMixedRealityCaptureConfiguration_set_externalCompositionBackdropColorQuest_m138B96C63F04F76E8F7563F54FA04D42D2A632BF (OVRMixedRealityCaptureSettings_tF6078D6B59F16A0EE3DEE4144FCED347444B9198* __this, Color_tD001788D726C3A7F1379BEED0260B9591F440C1F ___0_value, const RuntimeMethod* method) 
+{
+	{
+		Color_tD001788D726C3A7F1379BEED0260B9591F440C1F L_0 = ___0_value;
+		__this->___externalCompositionBackdropColorQuest = L_0;
+		return;
+	}
+}
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t OVRMixedRealityCaptureSettings_OVRMixedRealityCaptureConfiguration_get_capturingCameraDevice_m2FA8F9613FEA4733CEA559D1D0FFAACDF29483D0 (OVRMixedRealityCaptureSettings_tF6078D6B59F16A0EE3DEE4144FCED347444B9198* __this, const RuntimeMethod* method) 
+{
+	{
+		int32_t L_0 = __this->___capturingCameraDevice;
+		return L_0;
+	}
+}
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void OVRMixedRealityCaptureSettings_OVRMixedRealityCaptureConfiguration_set_capturingCameraDevice_m5668A68D487EF5258C73F1B999C679D3E93C680C (OVRMixedRealityCaptureSettings_tF6078D6B59F16A0EE3DEE4144FCED347444B9198* __this, int32_t ___0_value, const RuntimeMethod* method) 
+{
+	{
+		int32_t L_0 = ___0_value;
+		__this->___capturingCameraDevice = L_0;
+		return;
+	}
+}
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool OVRMixedRealityCaptureSettings_OVRMixedRealityCaptureConfiguration_get_flipCameraFrameHorizontally_m01C6CA448FE6B87262813F1E97942D5B85422770 (OVRMixedRealityCaptureSettings_tF6078D6B59F16A0EE3DEE4144FCED347444B9198* __this, const RuntimeMethod* method) 
+{
+	{
+		bool L_0 = __this->___flipCameraFrameHorizontally;
+		return L_0;
+	}
+}
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void OVRMixedRealityCaptureSettings_OVRMixedRealityCaptureConfiguration_set_flipCameraFrameHorizontally_mED3652CF4A5177A1F2C6E0F79D7396D786A9E4EB (OVRMixedRealityCaptureSettings_tF6078D6B59F16A0EE3DEE4144FCED347444B9198* __this, bool ___0_value, const RuntimeMethod* method) 
+{
+	{
+		bool L_0 = ___0_value;
+		__this->___flipCameraFrameHorizontally = L_0;
+		return;
+	}
+}
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool OVRMixedRealityCaptureSettings_OVRMixedRealityCaptureConfiguration_get_flipCameraFrameVertically_mDF69DC20159E4FEF8BA35250D9AF64E78674B458 (OVRMixedRealityCaptureSettings_tF6078D6B59F16A0EE3DEE4144FCED347444B9198* __this, const RuntimeMethod* method) 
+{
+	{
+		bool L_0 = __this->___flipCameraFrameVertically;
+		return L_0;
+	}
+}
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void OVRMixedRealityCaptureSettings_OVRMixedRealityCaptureConfiguration_set_flipCameraFrameVertically_mF01DC20366B6E62385C46FD1697B365FD632F44F (OVRMixedRealityCaptureSettings_tF6078D6B59F16A0EE3DEE4144FCED347444B9198* __this, bool ___0_value, const RuntimeMethod* method) 
+{
+	{
+		bool L_0 = ___0_value;
+		__this->___flipCameraFrameVertically = L_0;
+		return;
+	}
+}
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR float OVRMixedRealityCaptureSettings_OVRMixedRealityCaptureConfiguration_get_handPoseStateLatency_m2F1C56AB490C414D886BD11D71D9AA8ACEF43F4B (OVRMixedRealityCaptureSettings_tF6078D6B59F16A0EE3DEE4144FCED347444B9198* __this, const RuntimeMethod* method) 
+{
+	{
+		float L_0 = __this->___handPoseStateLatency;
+		return L_0;
+	}
+}
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void OVRMixedRealityCaptureSettings_OVRMixedRealityCaptureConfiguration_set_handPoseStateLatency_mCC5A252A1A99B687D41BFB14514DEA9E621E25E4 (OVRMixedRealityCaptureSettings_tF6078D6B59F16A0EE3DEE4144FCED347444B9198* __this, float ___0_value, const RuntimeMethod* method) 
+{
+	{
+		float L_0 = ___0_value;
+		__this->___handPoseStateLatency = L_0;
+		return;
+	}
+}
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR float OVRMixedRealityCaptureSettings_OVRMixedRealityCaptureConfiguration_get_sandwichCompositionRenderLatency_m39FFA6155BAF36117E3DA5490BFD45A2B5611D1E (OVRMixedRealityCaptureSettings_tF6078D6B59F16A0EE3DEE4144FCED347444B9198* __this, const RuntimeMethod* method) 
+{
+	{
+		float L_0 = __this->___sandwichCompositionRenderLatency;
+		return L_0;
+	}
+}
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void OVRMixedRealityCaptureSettings_OVRMixedRealityCaptureConfiguration_set_sandwichCompositionRenderLatency_m36EDBA31D136795170ACA37FC2238CA6D04929DD (OVRMixedRealityCaptureSettings_tF6078D6B59F16A0EE3DEE4144FCED347444B9198* __this, float ___0_value, const RuntimeMethod* method) 
+{
+	{
+		float L_0 = ___0_value;
+		__this->___sandwichCompositionRenderLatency = L_0;
+		return;
+	}
+}
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t OVRMixedRealityCaptureSettings_OVRMixedRealityCaptureConfiguration_get_sandwichCompositionBufferedFrames_mD4B0477D4EBFB741DA043922C8AE407575C98A74 (OVRMixedRealityCaptureSettings_tF6078D6B59F16A0EE3DEE4144FCED347444B9198* __this, const RuntimeMethod* method) 
+{
+	{
+		int32_t L_0 = __this->___sandwichCompositionBufferedFrames;
+		return L_0;
+	}
+}
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void OVRMixedRealityCaptureSettings_OVRMixedRealityCaptureConfiguration_set_sandwichCompositionBufferedFrames_m5128B2400E843A0EE83D527B14B4B3F3E716657F (OVRMixedRealityCaptureSettings_tF6078D6B59F16A0EE3DEE4144FCED347444B9198* __this, int32_t ___0_value, const RuntimeMethod* method) 
+{
+	{
+		int32_t L_0 = ___0_value;
+		__this->___sandwichCompositionBufferedFrames = L_0;
+		return;
+	}
+}
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Color_tD001788D726C3A7F1379BEED0260B9591F440C1F OVRMixedRealityCaptureSettings_OVRMixedRealityCaptureConfiguration_get_chromaKeyColor_m4C1E3CA80182DF2BE85639DFCB28935DAC6B160B (OVRMixedRealityCaptureSettings_tF6078D6B59F16A0EE3DEE4144FCED347444B9198* __this, const RuntimeMethod* method) 
+{
+	{
+		Color_tD001788D726C3A7F1379BEED0260B9591F440C1F L_0 = __this->___chromaKeyColor;
+		return L_0;
+	}
+}
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void OVRMixedRealityCaptureSettings_OVRMixedRealityCaptureConfiguration_set_chromaKeyColor_m90B1CFEE307B7B1D44142A9503807D2DE56B9DB0 (OVRMixedRealityCaptureSettings_tF6078D6B59F16A0EE3DEE4144FCED347444B9198* __this, Color_tD001788D726C3A7F1379BEED0260B9591F440C1F ___0_value, const RuntimeMethod* method) 
+{
+	{
+		Color_tD001788D726C3A7F1379BEED0260B9591F440C1F L_0 = ___0_value;
+		__this->___chromaKeyColor = L_0;
+		return;
+	}
+}
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR float OVRMixedRealityCaptureSettings_OVRMixedRealityCaptureConfiguration_get_chromaKeySimilarity_m8BED1623189F0DB9A2B4B39BA70009B99D542DE5 (OVRMixedRealityCaptureSettings_tF6078D6B59F16A0EE3DEE4144FCED347444B9198* __this, const RuntimeMethod* method) 
+{
+	{
+		float L_0 = __this->___chromaKeySimilarity;
+		return L_0;
+	}
+}
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void OVRMixedRealityCaptureSettings_OVRMixedRealityCaptureConfiguration_set_chromaKeySimilarity_m718755CC957AFDA9E1EA58549310BEAFCD4BC966 (OVRMixedRealityCaptureSettings_tF6078D6B59F16A0EE3DEE4144FCED347444B9198* __this, float ___0_value, const RuntimeMethod* method) 
+{
+	{
+		float L_0 = ___0_value;
+		__this->___chromaKeySimilarity = L_0;
+		return;
+	}
+}
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR float OVRMixedRealityCaptureSettings_OVRMixedRealityCaptureConfiguration_get_chromaKeySmoothRange_m6CCCE493B976C14C7F79B92C57EF375D9A27EA88 (OVRMixedRealityCaptureSettings_tF6078D6B59F16A0EE3DEE4144FCED347444B9198* __this, const RuntimeMethod* method) 
+{
+	{
+		float L_0 = __this->___chromaKeySmoothRange;
+		return L_0;
+	}
+}
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void OVRMixedRealityCaptureSettings_OVRMixedRealityCaptureConfiguration_set_chromaKeySmoothRange_mA337A0C76AB86B2051365300BD6DD433E06FF573 (OVRMixedRealityCaptureSettings_tF6078D6B59F16A0EE3DEE4144FCED347444B9198* __this, float ___0_value, const RuntimeMethod* method) 
+{
+	{
+		float L_0 = ___0_value;
+		__this->___chromaKeySmoothRange = L_0;
+		return;
+	}
+}
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR float OVRMixedRealityCaptureSettings_OVRMixedRealityCaptureConfiguration_get_chromaKeySpillRange_m4C3CCE44CE6FE910D583488D0373EA5B460F5558 (OVRMixedRealityCaptureSettings_tF6078D6B59F16A0EE3DEE4144FCED347444B9198* __this, const RuntimeMethod* method) 
+{
+	{
+		float L_0 = __this->___chromaKeySpillRange;
+		return L_0;
+	}
+}
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void OVRMixedRealityCaptureSettings_OVRMixedRealityCaptureConfiguration_set_chromaKeySpillRange_m575E030A908B3518A1D9454AAC6AE69CAE7CF88C (OVRMixedRealityCaptureSettings_tF6078D6B59F16A0EE3DEE4144FCED347444B9198* __this, float ___0_value, const RuntimeMethod* method) 
+{
+	{
+		float L_0 = ___0_value;
+		__this->___chromaKeySpillRange = L_0;
+		return;
+	}
+}
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool OVRMixedRealityCaptureSettings_OVRMixedRealityCaptureConfiguration_get_useDynamicLighting_m0AE4640B12296E6F5CB6664E64B0C81A952CCB01 (OVRMixedRealityCaptureSettings_tF6078D6B59F16A0EE3DEE4144FCED347444B9198* __this, const RuntimeMethod* method) 
+{
+	{
+		bool L_0 = __this->___useDynamicLighting;
+		return L_0;
+	}
+}
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void OVRMixedRealityCaptureSettings_OVRMixedRealityCaptureConfiguration_set_useDynamicLighting_m90C5228F782A0EE7B55A3449E7DAE0283A0023FF (OVRMixedRealityCaptureSettings_tF6078D6B59F16A0EE3DEE4144FCED347444B9198* __this, bool ___0_value, const RuntimeMethod* method) 
+{
+	{
+		bool L_0 = ___0_value;
+		__this->___useDynamicLighting = L_0;
+		return;
+	}
+}
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t OVRMixedRealityCaptureSettings_OVRMixedRealityCaptureConfiguration_get_depthQuality_mD4F0418B64305D0E87E9529959115D7D05C91968 (OVRMixedRealityCaptureSettings_tF6078D6B59F16A0EE3DEE4144FCED347444B9198* __this, const RuntimeMethod* method) 
+{
+	{
+		int32_t L_0 = __this->___depthQuality;
+		return L_0;
+	}
+}
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void OVRMixedRealityCaptureSettings_OVRMixedRealityCaptureConfiguration_set_depthQuality_mC73AFD33A856BCACCCDF15292D0D1D3C3706E98A (OVRMixedRealityCaptureSettings_tF6078D6B59F16A0EE3DEE4144FCED347444B9198* __this, int32_t ___0_value, const RuntimeMethod* method) 
+{
+	{
+		int32_t L_0 = ___0_value;
+		__this->___depthQuality = L_0;
+		return;
+	}
+}
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR float OVRMixedRealityCaptureSettings_OVRMixedRealityCaptureConfiguration_get_dynamicLightingSmoothFactor_m00A9308743CC9825117C4BE08A58378E1D5C9661 (OVRMixedRealityCaptureSettings_tF6078D6B59F16A0EE3DEE4144FCED347444B9198* __this, const RuntimeMethod* method) 
+{
+	{
+		float L_0 = __this->___dynamicLightingSmoothFactor;
+		return L_0;
+	}
+}
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void OVRMixedRealityCaptureSettings_OVRMixedRealityCaptureConfiguration_set_dynamicLightingSmoothFactor_m230F1340FBC72F91A710A4AAC476ED831E8C2F57 (OVRMixedRealityCaptureSettings_tF6078D6B59F16A0EE3DEE4144FCED347444B9198* __this, float ___0_value, const RuntimeMethod* method) 
+{
+	{
+		float L_0 = ___0_value;
+		__this->___dynamicLightingSmoothFactor = L_0;
+		return;
+	}
+}
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR float OVRMixedRealityCaptureSettings_OVRMixedRealityCaptureConfiguration_get_dynamicLightingDepthVariationClampingValue_m1450EEAFCAA001EEBFD50FB2C713CE9D5086CC0C (OVRMixedRealityCaptureSettings_tF6078D6B59F16A0EE3DEE4144FCED347444B9198* __this, const RuntimeMethod* method) 
+{
+	{
+		float L_0 = __this->___dynamicLightingDepthVariationClampingValue;
+		return L_0;
+	}
+}
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void OVRMixedRealityCaptureSettings_OVRMixedRealityCaptureConfiguration_set_dynamicLightingDepthVariationClampingValue_m34297464C23549C1120FFB6EAEC74B7E3A6E2D71 (OVRMixedRealityCaptureSettings_tF6078D6B59F16A0EE3DEE4144FCED347444B9198* __this, float ___0_value, const RuntimeMethod* method) 
+{
+	{
+		float L_0 = ___0_value;
+		__this->___dynamicLightingDepthVariationClampingValue = L_0;
+		return;
+	}
+}
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t OVRMixedRealityCaptureSettings_OVRMixedRealityCaptureConfiguration_get_virtualGreenScreenType_mE744718D97BC8BA6D5451F7DCB2596BA4C3CC4D8 (OVRMixedRealityCaptureSettings_tF6078D6B59F16A0EE3DEE4144FCED347444B9198* __this, const RuntimeMethod* method) 
+{
+	{
+		int32_t L_0 = __this->___virtualGreenScreenType;
+		return L_0;
+	}
+}
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void OVRMixedRealityCaptureSettings_OVRMixedRealityCaptureConfiguration_set_virtualGreenScreenType_m5B79FF001CC4F5DC96461C23B5E3D491578DC516 (OVRMixedRealityCaptureSettings_tF6078D6B59F16A0EE3DEE4144FCED347444B9198* __this, int32_t ___0_value, const RuntimeMethod* method) 
+{
+	{
+		int32_t L_0 = ___0_value;
+		__this->___virtualGreenScreenType = L_0;
+		return;
+	}
+}
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR float OVRMixedRealityCaptureSettings_OVRMixedRealityCaptureConfiguration_get_virtualGreenScreenTopY_m7284C54258BB598DCFA7695C08869FAECC6F6A6B (OVRMixedRealityCaptureSettings_tF6078D6B59F16A0EE3DEE4144FCED347444B9198* __this, const RuntimeMethod* method) 
+{
+	{
+		float L_0 = __this->___virtualGreenScreenTopY;
+		return L_0;
+	}
+}
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void OVRMixedRealityCaptureSettings_OVRMixedRealityCaptureConfiguration_set_virtualGreenScreenTopY_m3D6AC653AE52A9C26A6F0B5BA18541BFC5DAC930 (OVRMixedRealityCaptureSettings_tF6078D6B59F16A0EE3DEE4144FCED347444B9198* __this, float ___0_value, const RuntimeMethod* method) 
+{
+	{
+		float L_0 = ___0_value;
+		__this->___virtualGreenScreenTopY = L_0;
+		return;
+	}
+}
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR float OVRMixedRealityCaptureSettings_OVRMixedRealityCaptureConfiguration_get_virtualGreenScreenBottomY_mD883BC4A715DEE320DBA86AEC457D202636B836C (OVRMixedRealityCaptureSettings_tF6078D6B59F16A0EE3DEE4144FCED347444B9198* __this, const RuntimeMethod* method) 
+{
+	{
+		float L_0 = __this->___virtualGreenScreenBottomY;
+		return L_0;
+	}
+}
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void OVRMixedRealityCaptureSettings_OVRMixedRealityCaptureConfiguration_set_virtualGreenScreenBottomY_m1FB4749EB69E3A5C2169D3DA3C013477E3E8A94C (OVRMixedRealityCaptureSettings_tF6078D6B59F16A0EE3DEE4144FCED347444B9198* __this, float ___0_value, const RuntimeMethod* method) 
+{
+	{
+		float L_0 = ___0_value;
+		__this->___virtualGreenScreenBottomY = L_0;
+		return;
+	}
+}
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool OVRMixedRealityCaptureSettings_OVRMixedRealityCaptureConfiguration_get_virtualGreenScreenApplyDepthCulling_m41A7B10AF36255E78C3B3AD948B3AD762213048B (OVRMixedRealityCaptureSettings_tF6078D6B59F16A0EE3DEE4144FCED347444B9198* __this, const RuntimeMethod* method) 
+{
+	{
+		bool L_0 = __this->___virtualGreenScreenApplyDepthCulling;
+		return L_0;
+	}
+}
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void OVRMixedRealityCaptureSettings_OVRMixedRealityCaptureConfiguration_set_virtualGreenScreenApplyDepthCulling_m3392306AA7F72DE4BD2FB19FDF5C2408CF0ED9F9 (OVRMixedRealityCaptureSettings_tF6078D6B59F16A0EE3DEE4144FCED347444B9198* __this, bool ___0_value, const RuntimeMethod* method) 
+{
+	{
+		bool L_0 = ___0_value;
+		__this->___virtualGreenScreenApplyDepthCulling = L_0;
+		return;
+	}
+}
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR float OVRMixedRealityCaptureSettings_OVRMixedRealityCaptureConfiguration_get_virtualGreenScreenDepthTolerance_m1353C756A3D54649ED69DEFA5A58B5A1484F1E40 (OVRMixedRealityCaptureSettings_tF6078D6B59F16A0EE3DEE4144FCED347444B9198* __this, const RuntimeMethod* method) 
+{
+	{
+		float L_0 = __this->___virtualGreenScreenDepthTolerance;
+		return L_0;
+	}
+}
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void OVRMixedRealityCaptureSettings_OVRMixedRealityCaptureConfiguration_set_virtualGreenScreenDepthTolerance_m27942E26D842522E0F54A9C9D3CE3A98FD4222BF (OVRMixedRealityCaptureSettings_tF6078D6B59F16A0EE3DEE4144FCED347444B9198* __this, float ___0_value, const RuntimeMethod* method) 
+{
+	{
+		float L_0 = ___0_value;
+		__this->___virtualGreenScreenDepthTolerance = L_0;
+		return;
+	}
+}
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t OVRMixedRealityCaptureSettings_OVRMixedRealityCaptureConfiguration_get_mrcActivationMode_m58E38CF9ABAE86550CAF01EDA00CFF0E812BE91C (OVRMixedRealityCaptureSettings_tF6078D6B59F16A0EE3DEE4144FCED347444B9198* __this, const RuntimeMethod* method) 
+{
+	{
+		int32_t L_0 = __this->___mrcActivationMode;
+		return L_0;
+	}
+}
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void OVRMixedRealityCaptureSettings_OVRMixedRealityCaptureConfiguration_set_mrcActivationMode_mA70AE6CB13F1B3367AC21573703603E0E1E67C82 (OVRMixedRealityCaptureSettings_tF6078D6B59F16A0EE3DEE4144FCED347444B9198* __this, int32_t ___0_value, const RuntimeMethod* method) 
+{
+	{
+		int32_t L_0 = ___0_value;
+		__this->___mrcActivationMode = L_0;
+		return;
+	}
+}
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR InstantiateMrcCameraDelegate_t26D39C3003CADD2CBA4E7C5EB75333089B2F03C8* OVRMixedRealityCaptureSettings_OVRMixedRealityCaptureConfiguration_get_instantiateMixedRealityCameraGameObject_m275D39C1C1C448327AE6CC3436B8D57B786A64A2 (OVRMixedRealityCaptureSettings_tF6078D6B59F16A0EE3DEE4144FCED347444B9198* __this, const RuntimeMethod* method) 
+{
+	{
+		InstantiateMrcCameraDelegate_t26D39C3003CADD2CBA4E7C5EB75333089B2F03C8* L_0 = __this->___U3COVRMixedRealityCaptureConfiguration_instantiateMixedRealityCameraGameObjectU3Ek__BackingField;
+		return L_0;
+	}
+}
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void OVRMixedRealityCaptureSettings_OVRMixedRealityCaptureConfiguration_set_instantiateMixedRealityCameraGameObject_mB20C6DD39E1C8BE2BF5C8F0A8922BF223AEAC392 (OVRMixedRealityCaptureSettings_tF6078D6B59F16A0EE3DEE4144FCED347444B9198* __this, InstantiateMrcCameraDelegate_t26D39C3003CADD2CBA4E7C5EB75333089B2F03C8* ___0_value, const RuntimeMethod* method) 
+{
+	{
+		InstantiateMrcCameraDelegate_t26D39C3003CADD2CBA4E7C5EB75333089B2F03C8* L_0 = ___0_value;
+		__this->___U3COVRMixedRealityCaptureConfiguration_instantiateMixedRealityCameraGameObjectU3Ek__BackingField = L_0;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->___U3COVRMixedRealityCaptureConfiguration_instantiateMixedRealityCameraGameObjectU3Ek__BackingField), (void*)L_0);
+		return;
+	}
+}
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void OVRMixedRealityCaptureSettings__ctor_m0B6C6484A18559FE73433024B2471C27C50A3D01 (OVRMixedRealityCaptureSettings_tF6078D6B59F16A0EE3DEE4144FCED347444B9198* __this, const RuntimeMethod* method) 
+{
+	{
+		__this->___dynamicCullingMask = (bool)1;
+		Color_tD001788D726C3A7F1379BEED0260B9591F440C1F L_0;
+		L_0 = Color_get_green_mEB001F2CD8C68C6BBAEF9101990B779D3AA2A6EF_inline(NULL);
+		__this->___externalCompositionBackdropColorRift = L_0;
+		Color_tD001788D726C3A7F1379BEED0260B9591F440C1F L_1;
+		L_1 = Color_get_clear_m02E023A7D396B973288B3915F6F24FBF7E0DC81D_inline(NULL);
+		__this->___externalCompositionBackdropColorQuest = L_1;
+		__this->___sandwichCompositionBufferedFrames = 8;
+		Color_tD001788D726C3A7F1379BEED0260B9591F440C1F L_2;
+		L_2 = Color_get_green_mEB001F2CD8C68C6BBAEF9101990B779D3AA2A6EF_inline(NULL);
+		__this->___chromaKeyColor = L_2;
+		__this->___chromaKeySimilarity = (0.600000024f);
+		__this->___chromaKeySmoothRange = (0.0299999993f);
+		__this->___chromaKeySpillRange = (0.0399999991f);
+		__this->___depthQuality = 1;
+		__this->___dynamicLightingSmoothFactor = (8.0f);
+		__this->___dynamicLightingDepthVariationClampingValue = (0.00100000005f);
+		__this->___virtualGreenScreenDepthTolerance = (0.200000003f);
+		ScriptableObject__ctor_mD037FDB0B487295EA47F79A4DB1BF1846C9087FF(__this, NULL);
+		return;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
 #ifdef __clang__
 #pragma clang diagnostic push
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
@@ -23164,6 +23654,42 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void OVRVignette__cctor_m5EB0B638C9A3C5E4BA57
 #ifdef __clang__
 #pragma clang diagnostic pop
 #endif
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR Color_tD001788D726C3A7F1379BEED0260B9591F440C1F Color_get_green_mEB001F2CD8C68C6BBAEF9101990B779D3AA2A6EF_inline (const RuntimeMethod* method) 
+{
+	Color_tD001788D726C3A7F1379BEED0260B9591F440C1F V_0;
+	memset((&V_0), 0, sizeof(V_0));
+	{
+		Color_tD001788D726C3A7F1379BEED0260B9591F440C1F L_0;
+		memset((&L_0), 0, sizeof(L_0));
+		Color__ctor_m3786F0D6E510D9CFA544523A955870BD2A514C8C_inline((&L_0), (0.0f), (1.0f), (0.0f), (1.0f), NULL);
+		V_0 = L_0;
+		goto IL_001d;
+	}
+
+IL_001d:
+	{
+		Color_tD001788D726C3A7F1379BEED0260B9591F440C1F L_1 = V_0;
+		return L_1;
+	}
+}
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR Color_tD001788D726C3A7F1379BEED0260B9591F440C1F Color_get_clear_m02E023A7D396B973288B3915F6F24FBF7E0DC81D_inline (const RuntimeMethod* method) 
+{
+	Color_tD001788D726C3A7F1379BEED0260B9591F440C1F V_0;
+	memset((&V_0), 0, sizeof(V_0));
+	{
+		Color_tD001788D726C3A7F1379BEED0260B9591F440C1F L_0;
+		memset((&L_0), 0, sizeof(L_0));
+		Color__ctor_m3786F0D6E510D9CFA544523A955870BD2A514C8C_inline((&L_0), (0.0f), (0.0f), (0.0f), (0.0f), NULL);
+		V_0 = L_0;
+		goto IL_001d;
+	}
+
+IL_001d:
+	{
+		Color_tD001788D726C3A7F1379BEED0260B9591F440C1F L_1 = V_0;
+		return L_1;
+	}
+}
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* OVRCameraRig_get_trackingSpace_m76339871C7804C1BD14283FBF3D91268D4D87550_inline (OVRCameraRig_t7FC2BB0D30DED2B7F0C8914AF2B66E9F4CF891A9* __this, const RuntimeMethod* method) 
 {
 	{
